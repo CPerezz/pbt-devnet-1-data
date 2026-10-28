@@ -1,0 +1,6 @@
+{
+ "source": "pbt-devnet-1-watch data/samples-*.jsonl",
+ "rows": 54301,
+ "bytes": 3274762,
+ "written": "2026-10-28T07:16:22+00:00"
+}

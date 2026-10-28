@@ -1,0 +1,7 @@
+{
+ "source": "eth_getBlockAccessList via panda ethnode lighthouse-nethermind-2",
+ "what": "BAL size per sampled block (stride 100 synthetic, 50 live, 20 load)",
+ "rows": 1540,
+ "bytes": 27142,
+ "written": "2026-10-27T21:50:43+00:00"
+}

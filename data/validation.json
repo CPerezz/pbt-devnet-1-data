@@ -1,0 +1,156 @@
+{
+ "window": [
+  "2026-10-22T08:00:00+00:00",
+  "2026-10-27T21:00:00+00:00"
+ ],
+ "files": 966,
+ "rows": 119377646,
+ "bytes": 553184968,
+ "logs_el_chunks": {
+  "geth-1": 23,
+  "geth-2": 23,
+  "geth-3": 23,
+  "nethermind-1": 23,
+  "nethermind-2": 23,
+  "besu-1": 23,
+  "besu-2": 23,
+  "erigon-1": 23,
+  "erigon-2": 23
+ },
+ "logs_el_expected_chunks": 23,
+ "prom_step_coverage": {
+  "cadvisor/besu-1": 0.9935,
+  "cadvisor/besu-2": 0.9736,
+  "cadvisor/erigon-1": 0.9935,
+  "cadvisor/erigon-2": 0.9737,
+  "cadvisor/geth-1": 0.9935,
+  "cadvisor/geth-2": 0.9737,
+  "cadvisor/geth-3": 0.9737,
+  "cadvisor/nethermind-1": 0.9935,
+  "cadvisor/nethermind-2": 0.9737,
+  "consensus_node/besu-1": 0.994,
+  "consensus_node/besu-2": 0.994,
+  "consensus_node/erigon-1": 0.994,
+  "consensus_node/erigon-2": 0.9939,
+  "consensus_node/geth-1": 0.994,
+  "consensus_node/geth-2": 0.9941,
+  "consensus_node/geth-3": 0.994,
+  "consensus_node/nethermind-1": 0.994,
+  "consensus_node/nethermind-2": 0.994,
+  "execution/besu-1": 0.9447,
+  "execution/besu-2": 0.9824,
+  "execution/erigon-1": 0.99,
+  "execution/erigon-2": 0.8356,
+  "execution/geth-1": 0.994,
+  "execution/geth-2": 0.994,
+  "execution/geth-3": 0.9939,
+  "execution/nethermind-1": 0.9935,
+  "execution/nethermind-2": 0.994,
+  "exporter/besu-1": 0.994,
+  "exporter/besu-2": 0.994,
+  "exporter/erigon-1": 0.9939,
+  "exporter/erigon-2": 0.994,
+  "exporter/geth-1": 0.994,
+  "exporter/geth-2": 0.994,
+  "exporter/geth-3": 0.9939,
+  "exporter/nethermind-1": 0.994,
+  "exporter/nethermind-2": 0.994,
+  "node/besu-1": 1.0001,
+  "node/besu-2": 0.9999,
+  "node/erigon-1": 1.0001,
+  "node/erigon-2": 1.0,
+  "node/geth-1": 1.0001,
+  "node/geth-2": 1.0001,
+  "node/geth-3": 1.0,
+  "node/nethermind-1": 1.0001,
+  "node/nethermind-2": 1.0001
+ },
+ "prom_gaps_over_5min": [
+  [
+   "besu-1",
+   "2026-10-22 22:27:30+02:00",
+   7620
+  ],
+  [
+   "besu-1",
+   "2026-10-23 07:35:00+02:00",
+   7800
+  ],
+  [
+   "besu-1",
+   "2026-10-27 01:26:30+01:00",
+   7800
+  ],
+  [
+   "besu-2",
+   "2026-10-23 13:49:30+02:00",
+   5460
+  ],
+  [
+   "erigon-1",
+   "2026-10-23 05:09:30+02:00",
+   1560
+  ],
+  [
+   "erigon-1",
+   "2026-10-25 07:00:00+01:00",
+   420
+  ],
+  [
+   "erigon-2",
+   "2026-10-22 18:43:00+02:00",
+   630
+  ],
+  [
+   "erigon-2",
+   "2026-10-22 19:57:00+02:00",
+   42750
+  ],
+  [
+   "erigon-2",
+   "2026-10-23 15:34:00+02:00",
+   1560
+  ],
+  [
+   "erigon-2",
+   "2026-10-23 16:00:30+02:00",
+   780
+  ],
+  [
+   "erigon-2",
+   "2026-10-23 18:04:00+02:00",
+   4200
+  ],
+  [
+   "erigon-2",
+   "2026-10-24 09:14:00+02:00",
+   3900
+  ],
+  [
+   "erigon-2",
+   "2026-10-24 10:35:30+02:00",
+   20100
+  ],
+  [
+   "erigon-2",
+   "2026-10-25 05:09:00+01:00",
+   1230
+  ],
+  [
+   "erigon-2",
+   "2026-10-25 06:02:30+01:00",
+   930
+  ]
+ ],
+ "xatu_rows": {
+  "beacon_api_eth_v1_events_block": 320578,
+  "beacon_api_eth_v1_events_chain_reorg": 387,
+  "beacon_api_eth_v1_events_execution_payload": 320172,
+  "beacon_api_eth_v1_events_execution_payload_available": 320172,
+  "beacon_api_eth_v1_events_finalized_checkpoint": 10728,
+  "beacon_api_eth_v1_events_head": 319579,
+  "beacon_api_eth_v2_beacon_block": 36517,
+  "beacon_api_slot": 347075,
+  "execution_engine_new_payload": 329417
+ }
+}

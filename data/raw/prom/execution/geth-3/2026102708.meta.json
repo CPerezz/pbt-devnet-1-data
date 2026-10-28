@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"system_(memory|cpu|disk)_.*|chain_.*|pathdb_.*|eth_db_(chaindata|state).*|state_(accounts|storages|contracts|trienodes|height).*|pbt_.*|txpool_(pending|queued|slots)|p2p_peers|rpc_duration_all(_count)?|engine_.*\",network=\"glamsterdam-pbt-1\",job=\"execution\",instance=\"glamsterdam-pbt-1-lighthouse-geth-3\"}",
+ "t0": "2026-10-27 08:00:00",
+ "t1": "2026-10-27 20:00:00",
+ "step": "30s",
+ "rows": 544707,
+ "bytes": 1514485,
+ "written": "2026-10-27T21:50:57+00:00"
+}

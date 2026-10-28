@@ -1,0 +1,7 @@
+{
+ "source": "eth_getBlockByNumber via panda ethnode lighthouse-geth-2",
+ "what": "sampled headers fork\u2192first live",
+ "rows": 1420,
+ "bytes": 212078,
+ "written": "2026-10-27T21:48:35+00:00"
+}

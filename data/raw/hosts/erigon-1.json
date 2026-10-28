@@ -1,0 +1,1746 @@
+{
+ "host": "erigon-1",
+ "inspect": [
+  {
+   "Id": "f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112",
+   "Created": "2026-10-26T11:25:12.82561403Z",
+   "Path": "/usr/local/bin/erigon",
+   "Args": [
+    "--datadir=/data",
+    "--nat=extip:164.92.239.96",
+    "--port=30303",
+    "--http",
+    "--http.addr=0.0.0.0",
+    "--http.port=8545",
+    "--torrent.port=42069",
+    "--authrpc.jwtsecret=/execution-auth.jwt",
+    "--authrpc.addr=0.0.0.0",
+    "--authrpc.port=8551",
+    "--authrpc.vhosts=*",
+    "--metrics",
+    "--metrics.addr=0.0.0.0",
+    "--metrics.port=6060",
+    "--nat=extip:2a03:b0c0:3:f0:0:3:257f:a00e",
+    "--nodekey=/node-identity/nodekey",
+    "--experimental.commitment-v3",
+    "--http.api=eth,erigon,engine,web3,net,txpool,admin,debug",
+    "--http.vhosts=*",
+    "--ws",
+    "--networkid=1",
+    "--db.size.limit=2TB",
+    "--keep.stored.chain.config=true",
+    "--externalcl",
+    "--nodiscover",
+    "--no-downloader",
+    "--log.console.verbosity=debug",
+    "--rpc.gascap=200000000",
+    "--txpool.globalslots=20000",
+    "--pprof",
+    "--pprof.addr=0.0.0.0",
+    "--pprof.port=6060",
+    "--staticpeers=enode://10ed620fbfdefa42fa127706ef60a2a4ef2c53ba2a8abb12d3496cf5cb285a1978cb4d3e34557485909c6336a2608bf7a76388962097efa0a21fb0941c4bcf3b@167.172.188.11:30303,enode://2096bde5681308cbd1c199afe980e68dd307ac0f0fa2c14c6887fbda85366644d051bc387376f87cc33a7a8678d5812056ad245a92aa5dc7936228bc6e1ca16e@46.101.159.233:30303,enode://6fb8ff85c2370d3d13dae963498d66bdf8eed94d0234610fa6fc233832192fc12347ec8a110d59674dc2c1deb6eb23cbd2aaea05010612a9951f0177026bcaff@164.92.248.222:30303,enode://88979db4d909f9acb7cbd316deb703eed00faf20ef1c073c8ad19364811dab3dbdd319c255bdef7f2fcf929d17f031e6db21d8ef91d01fcbb18cac87f1ca469a@46.101.230.44:30303,enode://8c1ee3b4dc98dd7a8051daa9fca0db10a400fbfdf762e5caf00f9d62d51059e778a820454a1f8395085486ffbdc79509cc8301b258da8ef3e2e6d106e3473377@164.92.171.244:30303,enode://90cbba7c5603bd91f3defce832b65e3c77300c08a2934795ebae94e67adf9efdb0da88876ac621aee03290c52d789b4a901910440e756ee90fe0518d01019ce6@201.79.83.218:30303,enode://a4a71053368b8c05e7cd9bf30e07964d1390a8e65d1333a532ba00c89bf32c6effffa7a0f214de51033c8408052f06eb7305bba327583c6dd67e36f96d8996e2@159.89.21.191:30303,enode://c6284ad5ffa91fd15b452fa7b44509cc33b884e38547388c6fd0f1cf417e68c304ff42d862fc6906c4f710ec2a60882326f92c5bb0fcbe53598ead0fb4189f47@138.68.76.218:30303",
+    "--override.binary-trie=1793264400"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1545369,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-27T07:07:51.086802194Z",
+    "FinishedAt": "2026-10-27T07:07:49.647645979Z"
+   },
+   "Image": "sha256:82963bd63604e17e19ff47eb2cec483cce548ede370e0fe60e587f13f2779fb9",
+   "ResolvConfPath": "/var/lib/docker/containers/f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112/hostname",
+   "HostsPath": "/var/lib/docker/containers/f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112/hosts",
+   "LogPath": "/var/lib/docker/containers/f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112/f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112-json.log",
+   "Name": "/execution",
+   "RestartCount": 0,
+   "Driver": "overlay2",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/pbt-1/erigon:/data:rw",
+     "/data/pbt-1/node-identity:/node-identity:ro",
+     "/data/execution-auth.secret:/execution-auth.jwt:ro",
+     "/data/ethereum-network-config/metadata:/network-config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {
+     "30303/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "30303/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "42069/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "42069"
+      }
+     ],
+     "42069/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "42069"
+      }
+     ],
+     "6060/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "6060"
+      }
+     ],
+     "8545/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8545"
+      }
+     ],
+     "8551/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8551"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 34359738368,
+    "NanoCpus": 8000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "0-7",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 34359738368,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "GraphDriver": {
+    "Data": {
+     "ID": "f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112",
+     "LowerDir": "/var/lib/docker/overlay2/42e46f9e8ce3674ebffbe3ccc9f79787a38c41223328cd7fd65506eadf86cf83-init/diff:/var/lib/docker/overlay2/81ee8366b85ae9124273288a15b5256019e0b9264e663083d104f483640ad3da/diff:/var/lib/docker/overlay2/406f2ffdaf9e2b6a8d8ef895bf5677a6fe7d64b4a4f47242aa9e9e8b47a6cebb/diff:/var/lib/docker/overlay2/2c76a0fde975e8d894094f6d06b88a542468eee747081f083433b25dec5cca0c/diff",
+     "MergedDir": "/var/lib/docker/overlay2/42e46f9e8ce3674ebffbe3ccc9f79787a38c41223328cd7fd65506eadf86cf83/merged",
+     "UpperDir": "/var/lib/docker/overlay2/42e46f9e8ce3674ebffbe3ccc9f79787a38c41223328cd7fd65506eadf86cf83/diff",
+     "WorkDir": "/var/lib/docker/overlay2/42e46f9e8ce3674ebffbe3ccc9f79787a38c41223328cd7fd65506eadf86cf83/work"
+    },
+    "Name": "overlay2"
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/pbt-1/erigon",
+     "Destination": "/data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/execution-auth.secret",
+     "Destination": "/execution-auth.jwt",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/pbt-1/node-identity",
+     "Destination": "/node-identity",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "volume",
+     "Name": "256f0bea1e51c3313f694ba0bf104e66187e40fdfa12e90a5239b9d4d003bb17",
+     "Source": "/var/lib/docker/volumes/256f0bea1e51c3313f694ba0bf104e66187e40fdfa12e90a5239b9d4d003bb17/_data",
+     "Destination": "/home/erigon",
+     "Driver": "local",
+     "Mode": "",
+     "RW": true,
+     "Propagation": ""
+    }
+   ],
+   "Config": {
+    "Hostname": "f737c90551ed",
+    "Domainname": "",
+    "User": "1002:1002",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "30303/tcp": {},
+     "30303/udp": {},
+     "42069/tcp": {},
+     "42069/udp": {},
+     "6060/tcp": {},
+     "8080/tcp": {},
+     "8545/tcp": {},
+     "8546/tcp": {},
+     "8551/tcp": {},
+     "9090/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "VIRTUAL_HOST=rpc-lighthouse-erigon-1.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "VIRTUAL_PORT=8545",
+     "LETSENCRYPT_HOST=rpc-lighthouse-erigon-1.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "SAVE_HEAP_PROFILE=true",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "--datadir=/data",
+     "--nat=extip:164.92.239.96",
+     "--port=30303",
+     "--http",
+     "--http.addr=0.0.0.0",
+     "--http.port=8545",
+     "--torrent.port=42069",
+     "--authrpc.jwtsecret=/execution-auth.jwt",
+     "--authrpc.addr=0.0.0.0",
+     "--authrpc.port=8551",
+     "--authrpc.vhosts=*",
+     "--metrics",
+     "--metrics.addr=0.0.0.0",
+     "--metrics.port=6060",
+     "--nat=extip:2a03:b0c0:3:f0:0:3:257f:a00e",
+     "--nodekey=/node-identity/nodekey",
+     "--experimental.commitment-v3",
+     "--http.api=eth,erigon,engine,web3,net,txpool,admin,debug",
+     "--http.vhosts=*",
+     "--ws",
+     "--networkid=1",
+     "--db.size.limit=2TB",
+     "--keep.stored.chain.config=true",
+     "--externalcl",
+     "--nodiscover",
+     "--no-downloader",
+     "--log.console.verbosity=debug",
+     "--rpc.gascap=200000000",
+     "--txpool.globalslots=20000",
+     "--pprof",
+     "--pprof.addr=0.0.0.0",
+     "--pprof.port=6060",
+     "--staticpeers=enode://10ed620fbfdefa42fa127706ef60a2a4ef2c53ba2a8abb12d3496cf5cb285a1978cb4d3e34557485909c6336a2608bf7a76388962097efa0a21fb0941c4bcf3b@167.172.188.11:30303,enode://2096bde5681308cbd1c199afe980e68dd307ac0f0fa2c14c6887fbda85366644d051bc387376f87cc33a7a8678d5812056ad245a92aa5dc7936228bc6e1ca16e@46.101.159.233:30303,enode://6fb8ff85c2370d3d13dae963498d66bdf8eed94d0234610fa6fc233832192fc12347ec8a110d59674dc2c1deb6eb23cbd2aaea05010612a9951f0177026bcaff@164.92.248.222:30303,enode://88979db4d909f9acb7cbd316deb703eed00faf20ef1c073c8ad19364811dab3dbdd319c255bdef7f2fcf929d17f031e6db21d8ef91d01fcbb18cac87f1ca469a@46.101.230.44:30303,enode://8c1ee3b4dc98dd7a8051daa9fca0db10a400fbfdf762e5caf00f9d62d51059e778a820454a1f8395085486ffbdc79509cc8301b258da8ef3e2e6d106e3473377@164.92.171.244:30303,enode://90cbba7c5603bd91f3defce832b65e3c77300c08a2934795ebae94e67adf9efdb0da88876ac621aee03290c52d789b4a901910440e756ee90fe0518d01019ce6@201.79.83.218:30303,enode://a4a71053368b8c05e7cd9bf30e07964d1390a8e65d1333a532ba00c89bf32c6effffa7a0f214de51033c8408052f06eb7305bba327583c6dd67e36f96d8996e2@159.89.21.191:30303,enode://c6284ad5ffa91fd15b452fa7b44509cc33b884e38547388c6fd0f1cf417e68c304ff42d862fc6906c4f710ec2a60882326f92c5bb0fcbe53598ead0fb4189f47@138.68.76.218:30303",
+     "--override.binary-trie=1793264400"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:977277f3f1c559d01d262994e3f2ca019bb517541553066a6e7e04d1efc46f6a",
+    "Volumes": {
+     "/home/erigon": {}
+    },
+    "WorkingDir": "/home/erigon",
+    "Entrypoint": [
+     "/usr/local/bin/erigon"
+    ],
+    "Labels": {
+     "buildnum": "521",
+     "commit": "9ac7b46",
+     "ethpandaops.io.commitRef": "9ac7b46251a5636be0a167c60daf01e2b92f4bff",
+     "ethpandaops.io.repo": "erigontech/erigon",
+     "org.opencontainers.image.authors": "https://github.com/erigontech/erigon/graphs/contributors",
+     "org.opencontainers.image.base.name": "debian:13-slim",
+     "org.opencontainers.image.created": "Not defined",
+     "org.opencontainers.image.description": "Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.",
+     "org.opencontainers.image.documentation": "https://docs.erigon.tech/",
+     "org.opencontainers.image.revision": "Not defined",
+     "org.opencontainers.image.source": "https://github.com/erigontech/erigon",
+     "org.opencontainers.image.url": "https://github.com/erigontech/erigon/blob/main/Dockerfile",
+     "version": "9ac7b46251a5636be0a167c60daf01e2b92f4bff"
+    },
+    "StopSignal": "2",
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "f85217a063dc8f80087fa0a3459b5b0c5fabbca46bc4df613782fc2bb3c176c3",
+    "SandboxKey": "/var/run/docker/netns/f85217a063dc",
+    "Ports": {
+     "30303/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "30303/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "42069/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "42069"
+      }
+     ],
+     "42069/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "42069"
+      }
+     ],
+     "6060/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "6060"
+      }
+     ],
+     "8080/tcp": null,
+     "8545/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8545"
+      }
+     ],
+     "8546/tcp": null,
+     "8551/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8551"
+      }
+     ],
+     "9090/tcp": null
+    },
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00e"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "efa9810cb8454fb0f1a2b4186503da3cde042e0959831444fb5e0a4d0ee38c20",
+      "EndpointID": "0fc5956c5ed552a2e712f3a21b324e23fc310f2f4b11bd468efe934dd89f97b4",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.4",
+      "MacAddress": "12:b4:af:f0:93:30",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:257f:a001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00e",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "execution",
+       "f737c90551ed"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "Id": "4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a",
+   "Created": "2026-10-22T08:17:53.170682728Z",
+   "Path": "lighthouse",
+   "Args": [
+    "beacon_node",
+    "--datadir=/data",
+    "--disable-upnp",
+    "--disable-enr-auto-update",
+    "--enr-address=164.92.239.96",
+    "--enr-tcp-port=9000",
+    "--enr-udp-port=9000",
+    "--listen-address=0.0.0.0",
+    "--port=9000",
+    "--discovery-port=9000",
+    "--http",
+    "--http-address=0.0.0.0",
+    "--http-port=5052",
+    "--execution-jwt=/execution-auth.jwt",
+    "--execution-endpoint=http://snooper-engine:8561",
+    "--metrics",
+    "--metrics-address=0.0.0.0",
+    "--metrics-allow-origin=*",
+    "--metrics-port=5054",
+    "--quic-port=9001",
+    "--enr-quic-port=9001",
+    "--listen-address=::",
+    "--enr-address=2a03:b0c0:3:f0:0:3:257f:a00b",
+    "--enr-tcp6-port=9000",
+    "--enr-udp6-port=9000",
+    "--port6=9000",
+    "--discovery-port6=9000",
+    "--quic-port6=9001",
+    "--enr-quic6-port=9001",
+    "--testnet-dir=/network-config",
+    "--boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA",
+    "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+    "--ignore-ws-check",
+    "--enable-fast-confirmation",
+    "--debug-level=debug"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 163235,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-22T08:17:53.212976287Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+   },
+   "Image": "sha256:678384403a1fcc71468f10befc2d2fd32e520d634349e0c00873b14e79662160",
+   "ResolvConfPath": "/var/lib/docker/containers/4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a/hostname",
+   "HostsPath": "/var/lib/docker/containers/4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a/hosts",
+   "LogPath": "/var/lib/docker/containers/4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a/4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a-json.log",
+   "Name": "/beacon",
+   "RestartCount": 0,
+   "Driver": "overlay2",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/lighthouse:/data:rw",
+     "/data/execution-auth.secret:/execution-auth.jwt:ro",
+     "/data/ethereum-network-config/metadata:/network-config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {
+     "5052/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5052"
+      }
+     ],
+     "5054/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5054"
+      }
+     ],
+     "9000/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9000/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9001/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ],
+     "9001/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "GraphDriver": {
+    "Data": {
+     "ID": "4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a",
+     "LowerDir": "/var/lib/docker/overlay2/cd79572c97504074a4eb2dad4bc384d2b6a14bf93b66ef94a14aad4f93d5ca50-init/diff:/var/lib/docker/overlay2/62a66956b994bf3f1ab1722cf3282718ffb3180f1f1338134ea842bffba1be46/diff:/var/lib/docker/overlay2/7bc6346a9aac4faa08b5d0ea559652506288c9c4f55d66a94fc0d17ca10e55ca/diff:/var/lib/docker/overlay2/b44c1793cea0f92522d33e8841d88584b681e63624609d8222826ebcb6debfe8/diff",
+     "MergedDir": "/var/lib/docker/overlay2/cd79572c97504074a4eb2dad4bc384d2b6a14bf93b66ef94a14aad4f93d5ca50/merged",
+     "UpperDir": "/var/lib/docker/overlay2/cd79572c97504074a4eb2dad4bc384d2b6a14bf93b66ef94a14aad4f93d5ca50/diff",
+     "WorkDir": "/var/lib/docker/overlay2/cd79572c97504074a4eb2dad4bc384d2b6a14bf93b66ef94a14aad4f93d5ca50/work"
+    },
+    "Name": "overlay2"
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/lighthouse",
+     "Destination": "/data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/execution-auth.secret",
+     "Destination": "/execution-auth.jwt",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    }
+   ],
+   "Config": {
+    "Hostname": "4e12ab4b22b8",
+    "Domainname": "",
+    "User": "1006",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "5052/tcp": {},
+     "5054/tcp": {},
+     "9000/tcp": {},
+     "9000/udp": {},
+     "9001/tcp": {},
+     "9001/udp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "VIRTUAL_HOST=bn-lighthouse-erigon-1.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "VIRTUAL_PORT=5052",
+     "LETSENCRYPT_HOST=bn-lighthouse-erigon-1.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "lighthouse",
+     "beacon_node",
+     "--datadir=/data",
+     "--disable-upnp",
+     "--disable-enr-auto-update",
+     "--enr-address=164.92.239.96",
+     "--enr-tcp-port=9000",
+     "--enr-udp-port=9000",
+     "--listen-address=0.0.0.0",
+     "--port=9000",
+     "--discovery-port=9000",
+     "--http",
+     "--http-address=0.0.0.0",
+     "--http-port=5052",
+     "--execution-jwt=/execution-auth.jwt",
+     "--execution-endpoint=http://snooper-engine:8561",
+     "--metrics",
+     "--metrics-address=0.0.0.0",
+     "--metrics-allow-origin=*",
+     "--metrics-port=5054",
+     "--quic-port=9001",
+     "--enr-quic-port=9001",
+     "--listen-address=::",
+     "--enr-address=2a03:b0c0:3:f0:0:3:257f:a00b",
+     "--enr-tcp6-port=9000",
+     "--enr-udp6-port=9000",
+     "--port6=9000",
+     "--discovery-port6=9000",
+     "--quic-port6=9001",
+     "--enr-quic6-port=9001",
+     "--testnet-dir=/network-config",
+     "--boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA",
+     "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+     "--ignore-ws-check",
+     "--enable-fast-confirmation",
+     "--debug-level=debug"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+    "Volumes": null,
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "Labels": {
+     "buildnum": "343",
+     "commit": "81a7029",
+     "ethpandaops.io.commitRef": "81a702910e64e640bff832c81bc78b781c5ea812",
+     "ethpandaops.io.repo": "sigp/lighthouse",
+     "org.opencontainers.image.version": "24.04",
+     "version": "81a702910e64e640bff832c81bc78b781c5ea812"
+    },
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "45a16e9a74c6656be3a5f28298ecc38fae631c4c116cc774bb15908504eb90c3",
+    "SandboxKey": "/var/run/docker/netns/45a16e9a74c6",
+    "Ports": {
+     "5052/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5052"
+      }
+     ],
+     "5054/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5054"
+      }
+     ],
+     "9000/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9000/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9001/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ],
+     "9001/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ]
+    },
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00b"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "efa9810cb8454fb0f1a2b4186503da3cde042e0959831444fb5e0a4d0ee38c20",
+      "EndpointID": "b0a221bb32e3896efe084521388a2099985584330a0c30561fa9ace3254a19fe",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.6",
+      "MacAddress": "5e:8b:1c:90:36:c5",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:257f:a001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00b",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "beacon",
+       "4e12ab4b22b8"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "Id": "1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa",
+   "Created": "2026-10-22T08:17:55.522120453Z",
+   "Path": "lighthouse",
+   "Args": [
+    "validator_client",
+    "--validators-dir=/validator-data/keys",
+    "--secrets-dir=/validator-data/secrets",
+    "--beacon-nodes=http://beacon:5052",
+    "--init-slashing-protection",
+    "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+    "--metrics",
+    "--metrics-address=0.0.0.0",
+    "--metrics-allow-origin=*",
+    "--metrics-port=5054",
+    "--testnet-dir=/network-config",
+    "--graffiti=lighthouse-erigon-1",
+    "--builder-proposals"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 163575,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-22T08:17:55.563324233Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+   },
+   "Image": "sha256:678384403a1fcc71468f10befc2d2fd32e520d634349e0c00873b14e79662160",
+   "ResolvConfPath": "/var/lib/docker/containers/1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa/hostname",
+   "HostsPath": "/var/lib/docker/containers/1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa/hosts",
+   "LogPath": "/var/lib/docker/containers/1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa/1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa-json.log",
+   "Name": "/validator",
+   "RestartCount": 0,
+   "Driver": "overlay2",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/lighthouse-validator:/validator-data:rw",
+     "/data/ethereum-network-config/metadata:/network-config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {},
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "GraphDriver": {
+    "Data": {
+     "ID": "1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa",
+     "LowerDir": "/var/lib/docker/overlay2/ab22e1827c36dccdeabe19b2ad4478e0690ce11c176bca32198a29c928ae26b9-init/diff:/var/lib/docker/overlay2/62a66956b994bf3f1ab1722cf3282718ffb3180f1f1338134ea842bffba1be46/diff:/var/lib/docker/overlay2/7bc6346a9aac4faa08b5d0ea559652506288c9c4f55d66a94fc0d17ca10e55ca/diff:/var/lib/docker/overlay2/b44c1793cea0f92522d33e8841d88584b681e63624609d8222826ebcb6debfe8/diff",
+     "MergedDir": "/var/lib/docker/overlay2/ab22e1827c36dccdeabe19b2ad4478e0690ce11c176bca32198a29c928ae26b9/merged",
+     "UpperDir": "/var/lib/docker/overlay2/ab22e1827c36dccdeabe19b2ad4478e0690ce11c176bca32198a29c928ae26b9/diff",
+     "WorkDir": "/var/lib/docker/overlay2/ab22e1827c36dccdeabe19b2ad4478e0690ce11c176bca32198a29c928ae26b9/work"
+    },
+    "Name": "overlay2"
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/lighthouse-validator",
+     "Destination": "/validator-data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    }
+   ],
+   "Config": {
+    "Hostname": "1a6311258609",
+    "Domainname": "",
+    "User": "1006",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "lighthouse",
+     "validator_client",
+     "--validators-dir=/validator-data/keys",
+     "--secrets-dir=/validator-data/secrets",
+     "--beacon-nodes=http://beacon:5052",
+     "--init-slashing-protection",
+     "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+     "--metrics",
+     "--metrics-address=0.0.0.0",
+     "--metrics-allow-origin=*",
+     "--metrics-port=5054",
+     "--testnet-dir=/network-config",
+     "--graffiti=lighthouse-erigon-1",
+     "--builder-proposals"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+    "Volumes": null,
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "Labels": {
+     "buildnum": "343",
+     "commit": "81a7029",
+     "ethpandaops.io.commitRef": "81a702910e64e640bff832c81bc78b781c5ea812",
+     "ethpandaops.io.repo": "sigp/lighthouse",
+     "org.opencontainers.image.version": "24.04",
+     "version": "81a702910e64e640bff832c81bc78b781c5ea812"
+    },
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "054a481b4715818f46f5f04e1d3b7d20831df3cece57142efd35d2fa1e6a27a6",
+    "SandboxKey": "/var/run/docker/netns/054a481b4715",
+    "Ports": {},
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00a"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "efa9810cb8454fb0f1a2b4186503da3cde042e0959831444fb5e0a4d0ee38c20",
+      "EndpointID": "9aeff9d9404770f64328273535e67b259d5f4b3cbb38b24abc8e68946b65f9e1",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.9",
+      "MacAddress": "de:84:54:73:9c:87",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:257f:a001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:257f:a00a",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "validator",
+       "1a6311258609"
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "ps": [
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --nat=extip:164.92.239.96 --port=30303 --http --http.addr=0.0.0.0 --http.port=8545 --torrent.port=42069 --authrpc.jwtsecret=/execution-auth.jwt --authrpc.addr=0.0.0.0 --authrpc.port=8551 --authrpc.vhosts=* --metrics --metrics.addr=0.0.0.0 --metrics.port=6060 --nat=extip:2a03:b0c0:3:f0:0:3:257f:a00e --nodekey=/node-identity/nodekey --experimental.commitment-v3 --http.api=eth,erigon,engine,web3,net,txpool,admin,debug --http.vhosts=* --ws --networkid=1 --db.size.limit=2TB --keep.stored.chain.config=true --externalcl --nodiscover --no-downloader --log.console.verbosity=debug --rpc.gascap=200000000 --txpool.globalslots=20000 --pprof --pprof.addr=0.0.0.0 --pprof.port=6060 --staticpeers=enode://10ed620fbfdefa42fa127706ef60a2a4ef2c53ba2a8abb12d3496cf5cb285a1978cb4d3e34557485909c6336a2608bf7a76388962097efa0a21fb0941c4bcf3b@167.172.188.11:30303,enode://2096bde5681308cbd1c199afe980e68dd307ac0f0fa2c14c6887fbda85366644d051bc387376f87cc33a7a8678d5812056ad245a92aa5dc7936228bc6e1ca16e@46.101.159.233:30303,enode://6fb8ff85c2370d3d13dae963498d66bdf8eed94d0234610fa6fc233832192fc12347ec8a110d59674dc2c1deb6eb23cbd2aaea05010612a9951f0177026bcaff@164.92.248.222:30303,enode://88979db4d909f9acb7cbd316deb703eed00faf20ef1c073c8ad19364811dab3dbdd319c255bdef7f2fcf929d17f031e6db21d8ef91d01fcbb18cac87f1ca469a@46.101.230.44:30303,enode://8c1ee3b4dc98dd7a8051daa9fca0db10a400fbfdf762e5caf00f9d62d51059e778a820454a1f8395085486ffbdc79509cc8301b258da8ef3e2e6d106e3473377@164.92.171.244:30303,enode://90cbba7c5603bd91f3defce832b65e3c77300c08a2934795ebae94e67adf9efdb0da88876ac621aee03290c52d789b4a901910440e756ee90fe0518d01019ce6@201.79.83.218:30303,enode://a4a71053368b8c05e7cd9bf30e07964d1390a8e65d1333a532ba00c89bf32c6effffa7a0f214de51033c8408052f06eb7305bba327583c6dd67e36f96d8996e2@159.89.21.191:30303,enode://c6284ad5ffa91fd15b452fa7b44509cc33b884e38547388c6fd0f1cf417e68c304ff42d862fc6906c4f710ec2a60882326f92c5bb0fcbe53598ead0fb4189f47@138.68.76.218:30303 --override.binary-trie=1793264400\"",
+   "CreatedAt": "2026-10-26 11:25:12 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "f737c90551edf9fc8bf476d0d2a5d9dcb6e4ad728d33091fcda89dc87f63a112",
+   "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:977277f3f1c559d01d262994e3f2ca019bb517541553066a6e7e04d1efc46f6a",
+   "Labels": "buildnum=521,commit=9ac7b46,ethpandaops.io.commitRef=9ac7b46251a5636be0a167c60daf01e2b92f4bff,ethpandaops.io.repo=erigontech/erigon,org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:13-slim,org.opencontainers.image.created=Not defined,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=Not defined,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/blob/main/Dockerfile,version=9ac7b46251a5636be0a167c60daf01e2b92f4bff",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/execution-auth.secret,/data/ethereum-network-config/metadata,/data/pbt-1/node-identity,256f0bea1e51c3313f694ba0bf104e66187e40fdfa12e90a5239b9d4d003bb17",
+   "Names": "execution",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "127.0.0.1:6060->6060/tcp, 8080/tcp, 127.0.0.1:8545->8545/tcp, 8546/tcp, 0.0.0.0:30303->30303/tcp, 0.0.0.0:30303->30303/udp, 127.0.0.1:8551->8551/tcp, 9090/tcp, 0.0.0.0:42069->42069/tcp, 0.0.0.0:42069->42069/udp",
+   "RunningFor": "34 hours ago",
+   "Size": "168MB (virtual 412MB)",
+   "State": "running",
+   "Status": "Up 15 hours"
+  },
+  {
+   "Command": "\"/usr/bin/entrypoint.sh --docker_only=true --housekeeping_interval=15s --store_container_labels=false --disable_metrics=advtcp,cpu_topology,cpuset,hugetlb,memory_numa,percpu,process,referenced_memory,resctrl,sched,tcp,udp\"",
+   "CreatedAt": "2026-10-22 11:30:20 +0000 UTC",
+   "HealthStatus": "healthy",
+   "ID": "7a48515b66d334f954f51d48a4dde1f4d33a58dc0a2ec6c5853bb28978068899",
+   "Image": "ghcr.io/google/cadvisor:v0.60.6@sha256:b8e7d1093144fd088f425ff003d75a4aa405de075db78dae3bc563730b1bd07a",
+   "Labels": "org.opencontainers.image.created=2026-09-18T22:45:24.202Z,org.opencontainers.image.description=Analyzes resource usage and performance characteristics of running containers.,org.opencontainers.image.licenses=NOASSERTION,org.opencontainers.image.revision=5bf5d43ac6f60d7ee36a13b4d5b4a78ad2d0abc7,org.opencontainers.image.source=https://github.com/google/cadvisor,org.opencontainers.image.title=cadvisor,org.opencontainers.image.url=https://github.com/google/cadvisor,org.opencontainers.image.version=0.60.6",
+   "LocalVolumes": "0",
+   "Mounts": "/,/sys,/dev/disk,/var/run,/var/lib/docker",
+   "Names": "cadvisor",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "8080/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 74.7MB)",
+   "State": "running",
+   "Status": "Up 5 days (healthy)"
+  },
+  {
+   "Command": "\"/bin/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus --storage.tsdb.retention.size=1GB --storage.tsdb.retention.time=2d\"",
+   "CreatedAt": "2026-10-22 08:47:24 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "d816c24a1bca4924c31f5014e307c3d6c545791f2a0879c346234620d5e7b54c",
+   "Image": "registry-1.docker.io/prom/prometheus:v2.40.7",
+   "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>",
+   "LocalVolumes": "0",
+   "Mounts": "/data/prometheus/data,/data/prometheus/etc",
+   "Names": "prometheus",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "127.0.0.1:9090->9090/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 223MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"lighthouse validator_client --validators-dir=/validator-data/keys --secrets-dir=/validator-data/secrets --beacon-nodes=http://beacon:5052 --init-slashing-protection --suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134 --metrics --metrics-address=0.0.0.0 --metrics-allow-origin=* --metrics-port=5054 --testnet-dir=/network-config --graffiti=lighthouse-erigon-1 --builder-proposals\"",
+   "CreatedAt": "2026-10-22 08:17:55 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "1a6311258609e878778b28b0de40bbd3e04944cd4cc42955fa84fedd0d6803fa",
+   "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "Labels": "buildnum=343,commit=81a7029,ethpandaops.io.commitRef=81a702910e64e640bff832c81bc78b781c5ea812,ethpandaops.io.repo=sigp/lighthouse,org.opencontainers.image.version=24.04,version=81a702910e64e640bff832c81bc78b781c5ea812",
+   "LocalVolumes": "0",
+   "Mounts": "/data/ethereum-network-config/metadata,/data/lighthouse-validator",
+   "Names": "validator",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 272MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"lighthouse beacon_node --datadir=/data --disable-upnp --disable-enr-auto-update --enr-address=164.92.239.96 --enr-tcp-port=9000 --enr-udp-port=9000 --listen-address=0.0.0.0 --port=9000 --discovery-port=9000 --http --http-address=0.0.0.0 --http-port=5052 --execution-jwt=/execution-auth.jwt --execution-endpoint=http://snooper-engine:8561 --metrics --metrics-address=0.0.0.0 --metrics-allow-origin=* --metrics-port=5054 --quic-port=9001 --enr-quic-port=9001 --listen-address=:: --enr-address=2a03:b0c0:3:f0:0:3:257f:a00b --enr-tcp6-port=9000 --enr-udp6-port=9000 --port6=9000 --discovery-port6=9000 --quic-port6=9001 --enr-quic6-port=9001 --testnet-dir=/network-config --boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA --suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134 --ignore-ws-check --enable-fast-confirmation --debug-level=debug\"",
+   "CreatedAt": "2026-10-22 08:17:53 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "4e12ab4b22b88d221191a14c8c0717bae63fed056c00cdf065b9465ca2b4a86a",
+   "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "Labels": "buildnum=343,commit=81a7029,ethpandaops.io.commitRef=81a702910e64e640bff832c81bc78b781c5ea812,ethpandaops.io.repo=sigp/lighthouse,org.opencontainers.image.version=24.04,version=81a702910e64e640bff832c81bc78b781c5ea812",
+   "LocalVolumes": "0",
+   "Mounts": "/data/lighthouse,/data/execution-auth.secret,/data/ethereum-network-config/metadata",
+   "Names": "beacon",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "127.0.0.1:5052->5052/tcp, 127.0.0.1:5054->5054/tcp, 0.0.0.0:9000-9001->9000-9001/tcp, 0.0.0.0:9000-9001->9000-9001/udp",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 272MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/xatu sentry --config=/config.yaml\"",
+   "CreatedAt": "2026-10-22 08:11:37 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "5e20b4eec66272f49563e205560913fc782ab63aa33597c285e7fa46a3e19303",
+   "Image": "registry-1.docker.io/ethpandaops/xatu:1.24.1",
+   "Labels": "org.opencontainers.image.created=2026-10-01T09:25:15Z,org.opencontainers.image.revision=3e95e6c4457abbe4b9fc44b69760162f9ac2743e,org.opencontainers.image.title=xatu,org.opencontainers.image.version=1.24.1",
+   "LocalVolumes": "0",
+   "Mounts": "/data/xatu-sentry/config.yaml",
+   "Names": "xatu-sentry",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 135MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/ethereum-metrics-exporter --metrics-port=9090 --config=/config/ethereum-metrics-exporter.yaml\"",
+   "CreatedAt": "2026-10-22 08:11:30 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "893edd1bfff0ee81e20f00049a6ed3ed96c32b5853ec100f4edfd63abc4cf53a",
+   "Image": "registry-1.docker.io/ethpandaops/ethereum-metrics-exporter:latest",
+   "Labels": "org.opencontainers.image.created=2026-10-06T03:15:03Z,org.opencontainers.image.revision=bafc01e9807c7a88ee6f0457bc5055607ad97f70,org.opencontainers.image.title=ethereum-metrics-exporter,org.opencontainers.image.version=0.30.0",
+   "LocalVolumes": "0",
+   "Mounts": "/data/ethereum-metrics-exporter,/data,/var/run/docker.sock",
+   "Names": "ethereum-metrics-exporter",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 30.8MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"./json_rpc_snoop -b=0.0.0.0 -p=8561 http://execution:8551\"",
+   "CreatedAt": "2026-10-22 08:11:06 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "08cade1e71e92c507e54379c1fd1fa43ae41d90728679d2e8113bf07b127f6d3",
+   "Image": "registry-1.docker.io/ethpandaops/rpc-snooper:latest",
+   "Labels": "org.opencontainers.image.created=2026-07-17T07:23:31Z,org.opencontainers.image.revision=e3bb3cb2f91eeaa35a30f2edfb224751b68aaa54,org.opencontainers.image.title=rpc-snooper,org.opencontainers.image.version=0.0.21",
+   "LocalVolumes": "0",
+   "Mounts": "/data/execution-auth.secret",
+   "Names": "snooper-engine",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "3000/tcp, 127.0.0.1:8561->8561/tcp, 0.0.0.0:8961->8961/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 118MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --experimental.commitment-v3 init /genesis.json\"",
+   "CreatedAt": "2026-10-22 08:10:56 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "4f40254639540c88cd19d8fb150afad84f94d606799c52e9db4861aaf0a5a99f",
+   "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:4aec40c643590ec9496c982b22f0efb04835ff071233e92c418f9380cc84db69",
+   "Labels": "buildnum=517,commit=372df0e,ethpandaops.io.commitRef=372df0e68f52f9975370bff38dee6e41aefff0d7,ethpandaops.io.repo=erigontech/erigon,org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:13-slim,org.opencontainers.image.created=Not defined,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=Not defined,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/blob/main/Dockerfile,version=372df0e68f52f9975370bff38dee6e41aefff0d7",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/ethereum-network-config/metadata/genesis.json,aec889d43383b814f10e5d480574027ad72b8c6bfe6aafb3fce5575f87bbb67a",
+   "Names": "execution-init",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "0B (virtual 242MB)",
+   "State": "exited",
+   "Status": "Exited (0) 2 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --keep.stored.chain.config --experimental.commitment-v3 --nodekey=/node-identity/nodekey --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug,admin,net --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true --exec.no-prune=true\"",
+   "CreatedAt": "2026-10-21 19:23:49 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "223c46b9380e8e6deccb09d2062a5c49a07ef994153220f3a4da8fe7cf3f0c34",
+   "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:4aec40c643590ec9496c982b22f0efb04835ff071233e92c418f9380cc84db69",
+   "Labels": "buildnum=517,commit=372df0e,ethpandaops.io.commitRef=372df0e68f52f9975370bff38dee6e41aefff0d7,ethpandaops.io.repo=erigontech/erigon,org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:13-slim,org.opencontainers.image.created=Not defined,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=Not defined,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/blob/main/Dockerfile,version=372df0e68f52f9975370bff38dee6e41aefff0d7",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/qualification/config,/data/pbt-1/erigon,/data/pbt-1/qualification/jwt,/data/pbt-1/node-identity,01723857f0354f21543f3bd050f5945e7320d25b83ae8ec3b6e1c3fae8815f2a",
+   "Names": "pbt-1-worker-qualification",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "6 days ago",
+   "Size": "0B (virtual 242MB)",
+   "State": "exited",
+   "Status": "Exited (0) 6 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true --exec.no-prune=true --experimental.commitment-v3 --keep.stored.chain.config\"",
+   "CreatedAt": "2026-10-20 23:23:54 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "3ab384b3aa2129cf8a435ad5e8c081a8bcbaba2fb28dc6d42aae373393efa141",
+   "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:4aec40c643590ec9496c982b22f0efb04835ff071233e92c418f9380cc84db69",
+   "Labels": "buildnum=517,commit=372df0e,ethpandaops.io.commitRef=372df0e68f52f9975370bff38dee6e41aefff0d7,ethpandaops.io.repo=erigontech/erigon,org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:13-slim,org.opencontainers.image.created=Not defined,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=Not defined,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/blob/main/Dockerfile,version=372df0e68f52f9975370bff38dee6e41aefff0d7",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/rehearsal-24453558/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/rehearsal-24453558/anchor-preparation/jwt,7430580fb50724453176d900660834bb518cc57652e31b308b0a628babb64a50",
+   "Names": "pbt-1-erigon-anchor-recovery",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "6 days ago",
+   "Size": "0B (virtual 242MB)",
+   "State": "exited",
+   "Status": "Exited (0) 6 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true --exec.no-prune=true --experimental.commitment-v3 --keep.stored.chain.config\"",
+   "CreatedAt": "2026-10-20 23:13:18 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "a60f3386f42139714da338a5eafedb8e5ae0652473096240e594f10b8f0ff22e",
+   "Image": "registry-1.docker.io/ethpandaops/erigon@sha256:4aec40c643590ec9496c982b22f0efb04835ff071233e92c418f9380cc84db69",
+   "Labels": "buildnum=517,commit=372df0e,ethpandaops.io.commitRef=372df0e68f52f9975370bff38dee6e41aefff0d7,ethpandaops.io.repo=erigontech/erigon,org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:13-slim,org.opencontainers.image.created=Not defined,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=Not defined,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/blob/main/Dockerfile,version=372df0e68f52f9975370bff38dee6e41aefff0d7",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/rehearsal-24453558/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/rehearsal-24453558/anchor-preparation/jwt,4abb69a062b0fb7cb5b08124112030eb40af09eb8bae21c0a175a6e2bc401bdb",
+   "Names": "pbt-1-erigon-anchor-preparation",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "6 days ago",
+   "Size": "0B (virtual 242MB)",
+   "State": "exited",
+   "Status": "Exited (0) 6 days ago"
+  },
+  {
+   "Command": "\"/app/docker-entrypoint.sh /usr/local/bin/docker-gen -watch -notify '/bin/sh /etc/nginx/certs/wildcard-symlinks.sh' -notify-sighup nginx-proxy /etc/docker-gen/templates/wildcard-symlinks.tmpl /etc/nginx/certs/wildcard-symlinks.sh\"",
+   "CreatedAt": "2026-10-20 18:09:29 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "a57bafbe54c7762ef2482788cfb41de6a8f40c1c3ff6b6d26ed010140281c351",
+   "Image": "registry-1.docker.io/nginxproxy/docker-gen",
+   "Labels": "org.opencontainers.image.authors=Nicolas Duchon <nicolas.duchon@gmail.com> (@buchdag), Jason Wilder,org.opencontainers.image.created=2026-10-19T03:17:33.031Z,org.opencontainers.image.description=Generate files from docker container meta-data,org.opencontainers.image.licenses=MIT,org.opencontainers.image.revision=1e4e4190d48c1b07311cb93b81f0b36074261b8e,org.opencontainers.image.source=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.title=docker-gen,org.opencontainers.image.url=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.version=0.17.2-88-g1e4e419",
+   "LocalVolumes": "1",
+   "Mounts": "/var/run/docker.sock,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/opt/nginx-proxy/templates/wildcard-symlinks.tmpl,html",
+   "Names": "nginx-proxy-cert-linker",
+   "Networks": "bridge",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "0B (virtual 30.9MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/cert-loader.sh\"",
+   "CreatedAt": "2026-10-20 18:09:26 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "4984a0b7b2f8998c641c67431a85403eac302f435b57591d86ccf8f9fc17d369",
+   "Image": "registry-1.docker.io/ethpandaops/debian-docker:latest",
+   "Labels": "",
+   "LocalVolumes": "1",
+   "Mounts": "/opt/nginx-proxy/cert-loader.sh,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/var/run/docker.sock,html",
+   "Names": "nginx-proxy-cert-loader",
+   "Networks": "bridge",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "223kB (virtual 934MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/app/docker-entrypoint.sh -notify-sighup nginx-proxy -watch /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf\"",
+   "CreatedAt": "2026-10-20 18:09:11 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "ac50488cd60bf4cd543901ef4c92876228a107ed4046cb02e51ba9a1098a24d4",
+   "Image": "registry-1.docker.io/nginxproxy/docker-gen",
+   "Labels": "org.opencontainers.image.authors=Nicolas Duchon <nicolas.duchon@gmail.com> (@buchdag), Jason Wilder,org.opencontainers.image.created=2026-10-19T03:17:33.031Z,org.opencontainers.image.description=Generate files from docker container meta-data,org.opencontainers.image.licenses=MIT,org.opencontainers.image.revision=1e4e4190d48c1b07311cb93b81f0b36074261b8e,org.opencontainers.image.source=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.title=docker-gen,org.opencontainers.image.url=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.version=0.17.2-88-g1e4e419",
+   "LocalVolumes": "1",
+   "Mounts": "/var/run/docker.sock,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/opt/nginx-proxy/nginx.tmpl,html",
+   "Names": "nginx-proxy-gen",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "0B (virtual 30.9MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/docker-entrypoint.sh nginx -g 'daemon off;'\"",
+   "CreatedAt": "2026-10-20 18:09:07 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "51091951636dd373daa96a226863c0d2bea865400247cfd91c399ed329582173",
+   "Image": "registry-1.docker.io/library/nginx:alpine",
+   "Labels": "maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+   "LocalVolumes": "1",
+   "Mounts": "/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,html",
+   "Names": "nginx-proxy",
+   "Networks": "shared",
+   "Platform": null,
+   "Ports": "0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp",
+   "RunningFor": "7 days ago",
+   "Size": "2B (virtual 69.1MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/bin/sh /fetcher/download.sh\"",
+   "CreatedAt": "2026-10-20 11:49:46 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "5e61dba62568c79399256af70a1440a865d8c15bcdd71b99db072b3a82659868",
+   "Image": "docker.io/library/alpine:3.19.1",
+   "Labels": "network=glamsterdam-pbt-1",
+   "LocalVolumes": "0",
+   "Mounts": "/data/pbt-1/rehearsal-24453558/erigon,/data/pbt-1/rehearsal-24453558/snapshot-fetcher,/data/pbt-1/rehearsal-24453558/snapshot-fetcher/tmp",
+   "Names": "pbt-1-erigon-rehearsal-snapshot",
+   "Networks": "bridge",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "8.94MB (virtual 16.3MB)",
+   "State": "exited",
+   "Status": "Exited (0) 7 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/vector --config /etc/vector/vector.toml\"",
+   "CreatedAt": "2026-10-20 10:54:20 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "c1133f2418ef05be9688342003bb91a59e634c11a16f230ba6362541a868d616",
+   "Image": "registry-1.docker.io/timberio/vector:0.56.0-alpine",
+   "Labels": "org.opencontainers.image.documentation=https://vector.dev/docs,org.opencontainers.image.source=https://github.com/vectordotdev/vector,org.opencontainers.image.url=https://vector.dev",
+   "LocalVolumes": "0",
+   "Mounts": "/data/vector/vector.toml,/var/run/docker.sock",
+   "Names": "vector",
+   "Networks": "bridge",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "0B (virtual 158MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/bin/node_exporter --path.procfs=/host/proc --path.rootfs=/rootfs --path.sysfs=/host/sys --collector.filesystem.ignored-mount-points ^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)\"",
+   "CreatedAt": "2026-10-20 10:54:04 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "71996c4b15114a3d68c9d98606dcad4f1c4c04cadd31afd355183cce3101e662",
+   "Image": "registry-1.docker.io/prom/node-exporter:v1.5.0",
+   "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>",
+   "LocalVolumes": "0",
+   "Mounts": "/,/proc,/sys",
+   "Names": "node_exporter",
+   "Networks": "host",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "0B (virtual 22.5MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true --exec.no-prune=true\"",
+   "CreatedAt": "2026-10-20 09:01:07 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "6bbdffb9987fc7a3391fbf611400b817ced99e3b847004a2ead5ea9f73045c40",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,7dd50b4e6aa173ce2e9d1a899c57b775f7dc8fe4be2aa692dbdeff7ad036db66",
+   "Names": "pbt-1-erigon-execution",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 7 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true\"",
+   "CreatedAt": "2026-10-19 21:12:38 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "f75ea1291c14f70c0a77ee297e2ce2bbb345ea92e3dfb3208e4621fb16f865ae",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,03a3b60077b7b3fc9f31f68301a8a8e76b8186a80f1e335d4212c097d9727de8",
+   "Names": "pbt-1-erigon-execution-before-bal-retention",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 7 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true\"",
+   "CreatedAt": "2026-10-19 20:37:30 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "6b2c0bc109664912e78ca471ae29b0d4c67d99ea72f2de71237159ac1b1cff81",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,bd3fb5f5fb19fdb3b66ea163df2994b0e1d3fe5b0fdc715846c6d8a733cd422f",
+   "Names": "pbt-1-erigon-execution-before-native-profile",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true\"",
+   "CreatedAt": "2026-10-19 20:30:37 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "834daaab9b0f1e7e6529ddd1e1e1b828a26a5e0553ec488f7eb8f80e7fee362f",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,a6fe199e4ef52398186011d4e619b215bd8e25bbde3e0894d3e935d3d800bbd3",
+   "Names": "pbt-1-erigon-execution-before-sync-policy-v2-durability-check",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "5.64MB (virtual 1.32GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:28:53 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "0c6f92a7497bcf37cc7e689da7be9e8ada4dafc4f0e5e04100000a5e4dca640e",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-guard-fixture.p2l1mvym,/data/pbt-1/erigon-sync-policy-guarded,/data/pbt-1/erigon-sync-policy-tests-static,d142378558caa3ee12fe60b1988603f2082b9584bd5f1701b1ac470e1b715fc0",
+   "Names": "pbt-1-sync-owner-guard-fixture",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:27:53 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "4ff12d40632fb9c7e8fb77977e44a531ff1b603fe3bbc70818c1fd6cfe9db0e3",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-dirty-lock-fixture.9orra7iy,/data/pbt-1/erigon-sync-policy-static,/data/pbt-1/erigon-sync-policy-tests-static,bd59792dc139564d1304ac670c3ca444863757d1ce91a9512324943f6957ac41",
+   "Names": "pbt-1-sync-dirty-lock-host-static",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (2) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:27:36 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "279a443aab59a1681788714d32efc0e3e7d66e6e91ad7a92a69196d74d54aad3",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-dirty-lock-fixture.llcwppx7,/data/pbt-1/erigon-sync-policy-static,/data/pbt-1/erigon-sync-policy-tests-static,dba5a39205c7d3460ffa50fe2b43cecdd7074800c83e0edada22504d56e90acd",
+   "Names": "pbt-1-sync-dirty-lock-container-static",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:26:53 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "86738f94e6f3b0949e477af7719440d0ccb7f5674ab2b83481eda20257d09a30",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-dirty-lock-fixture.5qcd4lar,/data/pbt-1/erigon-sync-policy-static,/data/pbt-1/erigon-sync-policy-tests-static,ca1ddd287e7f042b10dc2b5bd79a4e4d5eacfd8cdfecefd9f37b9bf95a76accb",
+   "Names": "pbt-1-sync-dirty-lock-host-dynamic",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (2) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:22:50 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "901b7a3ebc228cbfd04155bd920899a5ec6bb1c91eba206eeeb29d22a1df1335",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-sync-fixture-namespace.wy4oyb56,/data/pbt-1/erigon-sync-policy-static,/data/pbt-1/erigon-sync-policy-tests-static,4022cc02138acfe32556489af446c7e8fd0b1a7ddd2501a8cc9c9cfd8e054f00",
+   "Names": "pbt-1-sync-fixture-namespace",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:20:34 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "6ac4bfd1f37a375b9455ed1f4ff5c963d8ef6530b1363b44bccd2bdd282416f5",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-sync-fixture-static.zbbm_gab,/data/pbt-1/erigon-sync-policy-static,/data/pbt-1/erigon-sync-policy-tests-static,3e75390ba7b719d871c06bbdc0753d5cb180a7bc5eae513c8a337ed7d3435f4b",
+   "Names": "pbt-1-sync-fixture-static",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/test -test.run=^TestDisposableContainerOwner$ -test.v\"",
+   "CreatedAt": "2026-10-19 20:19:02 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "3b82cf93e0708ebe57410068608d1b4d48f4dfa25ebf0854a05c18c2352f0605",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/mdbx-sync-fixture.0jo0kt9s,/data/pbt-1/erigon-sync-policy,/data/pbt-1/erigon-sync-policy-tests,4bb61637fd2e85ca41c9527a5ebb5749e954795ca1262816a9f570a44e6bc5ff",
+   "Names": "pbt-1-sync-fixture",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (1) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true\"",
+   "CreatedAt": "2026-10-19 20:16:04 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "f27e50bf89c7bef1b0bcd1513a77f0c3775af60d9cc348e42128feedbc7e8e7e",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,edd14415015a7a67c8b6416d37d0f7d324b2f203d64172230598f8f23c8a0d53",
+   "Names": "pbt-1-erigon-execution-before-sync-policy-v2-pilot",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "5.64MB (virtual 1.32GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true\"",
+   "CreatedAt": "2026-10-19 20:13:43 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "27591d9c7d623e0c72d87cca318656ddec337997057c305c2eab2dfb93065fcd",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,cff4f3e67a4a013276dd75d770cc29584c3015908f806c847e1a4e29f84b7660",
+   "Names": "pbt-1-erigon-execution-before-sync-policy-failure-recovery",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB --exec.no-background-maintenance=true --exec.no-prune=true\"",
+   "CreatedAt": "2026-10-19 19:59:34 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "218ac76e95102040abd0d631e47eb944f04c8bf6bebecfb6ef46af643ce712d2",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,52d4c5208d5ee95b0c281bf69670c32f471465f1088faafdda4280027231f82e",
+   "Names": "pbt-1-erigon-execution-before-sync-policy-pilot",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB\"",
+   "CreatedAt": "2026-10-19 16:25:05 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "8665b1f1088c762c59ae0706c67b0c678575a866b688160065002a94eb03d772",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,a2919b810b62edf86594298fa796e8a538ee3ae22f79d9317a5d5ce7d510d4d7",
+   "Names": "pbt-1-erigon-execution-before-maintenance-suppression",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/erigon --datadir=/data --chain=mainnet --networkid=1 --override.osaka=1764798551 --override.amsterdam=1769856769 --http --http.addr=127.0.0.1 --http.port=18545 --http.api=eth,web3,debug --http.vhosts=* --authrpc.addr=127.0.0.1 --authrpc.port=18551 --authrpc.jwtsecret=/jwt --externalcl --nodiscover --maxpeers=0 --no-downloader --snap.stop --db.size.limit=2TB\"",
+   "CreatedAt": "2026-10-19 14:44:29 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "1a9f6803e7479fbe19c1348fd099f12afe0681218ad5b39e0aef616d1814b476",
+   "Image": "erigontech/erigon@sha256:28ee51ce29ecfedc4b9aee10b347ec97d990f8776bb8d51786c6642055791481",
+   "Labels": "org.opencontainers.image.authors=https://github.com/erigontech/erigon/graphs/contributors,org.opencontainers.image.base.name=debian:12-slim,org.opencontainers.image.created=2026-10-01T20:03:37Z,org.opencontainers.image.description=Erigon is an implementation of Ethereum (execution layer with embeddable consensus layer), on the efficiency frontier. Archive Node by default.,org.opencontainers.image.documentation=https://docs.erigon.tech/,org.opencontainers.image.revision=,org.opencontainers.image.source=https://github.com/erigontech/erigon,org.opencontainers.image.url=https://github.com/erigontech/erigon/tree/release/3.7,org.opencontainers.image.vcs-ref-short=,org.opencontainers.image.vendor=erigontech,org.opencontainers.image.version=v3.7.1",
+   "LocalVolumes": "1",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/pbt-1-source-genesis.json,/data/pbt-1/pipeline/jwt,5d8a621e54d2e3f8f9adb2465014f48a695d6db3f73270e255807e5626888e4c",
+   "Names": "pbt-1-erigon-execution-before-merge-tuning",
+   "Networks": "none",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "0B (virtual 1.31GB)",
+   "State": "exited",
+   "Status": "Exited (2) 8 days ago"
+  },
+  {
+   "Command": "\"/bin/sh /fetcher/download.sh\"",
+   "CreatedAt": "2026-10-19 12:56:50 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "31e5a0fcfd0fef03b179dfc223b6bdd79e81170541ce02654a1960fefa29e174",
+   "Image": "docker.io/library/alpine:3.19.1",
+   "Labels": "network=glamsterdam-pbt-1",
+   "LocalVolumes": "0",
+   "Mounts": "/data/pbt-1/erigon,/data/pbt-1/snapshot-fetcher,/data/pbt-1/snapshot-fetcher/tmp",
+   "Names": "pbt-1-erigon-snapshot",
+   "Networks": "bridge",
+   "Platform": null,
+   "Ports": "",
+   "RunningFor": "8 days ago",
+   "Size": "8.94MB (virtual 16.3MB)",
+   "State": "exited",
+   "Status": "Exited (0) 8 days ago"
+  }
+ ],
+ "vmstat": [
+  "pgmajfault 1197545959",
+  "oom_kill 0"
+ ],
+ "uptime": [
+  "2026-10-20 12:59:29"
+ ],
+ "cpu": [
+  "16"
+ ],
+ "mem": [
+  "MemTotal:       131911700 kB",
+  "SwapTotal:             0 kB"
+ ],
+ "df": [
+  "Mounted on Filesystem     Type     1B-blocks         Used         Avail",
+  "/          /dev/vda1      ext4 2536325763072 856041340928 1577165582336",
+  "/          /dev/vda1      ext4 2536325763072 856041340928 1577165582336"
+ ],
+ "lsblk": [
+  "NAME          SIZE ROTA TYPE MODEL",
+  "sda   590558003200    1 disk Volume",
+  "vda  2576980377600    1 disk ",
+  "vdb         501760    1 disk "
+ ],
+ "kernel": [
+  "6.12.113+deb13-amd64"
+ ],
+ "stderr": ""
+}

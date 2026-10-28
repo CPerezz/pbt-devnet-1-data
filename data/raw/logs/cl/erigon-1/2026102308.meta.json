@@ -1,0 +1,10 @@
+{
+ "source": "clickhouse-raw external.otel_logs",
+ "sql": "SELECT Timestamp AS ts, ResourceAttributes['container.name'] AS container, Body AS body FROM external.otel_logs WHERE Timestamp >= '2026-10-23 08:00:00' AND Timestamp < '2026-10-24 08:00:00' AND ResourceAttributes['network']='glamsterdam-pbt-1' AND ResourceAttributes['host.name']='lighthouse-erigon-1' AND ResourceAttributes['container.name'] IN ('beacon','validator') AND match(Body, ' (CRIT|ERRO|ERROR|WARN) |(?i:execution (engine|endpoint|node|layer))') ORDER BY Timestamp",
+ "t0": "2026-10-23 08:00:00",
+ "t1": "2026-10-24 08:00:00",
+ "host": "erigon-1",
+ "rows": 15824,
+ "bytes": 305711,
+ "written": "2026-10-27T21:50:45+00:00"
+}

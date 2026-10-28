@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"eth_docker_.*|eth_exe_.*|eth_con_(sync_.*|beacon_finality_checkpoint_epochs|beacon_slot|peers|health_up)\",network=\"glamsterdam-pbt-1\",job=\"exporter\",instance=\"glamsterdam-pbt-1-lighthouse-besu-1\"}",
+ "t0": "2026-10-25 08:00:00",
+ "t1": "2026-10-25 20:00:00",
+ "step": "30s",
+ "rows": 191653,
+ "bytes": 479683,
+ "written": "2026-10-27T21:52:05+00:00"
+}

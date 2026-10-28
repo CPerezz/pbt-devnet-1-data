@@ -1,0 +1,9 @@
+{
+ "source": "clickhouse-raw glamsterdam-pbt-1.execution_engine_new_payload",
+ "sql": "SELECT meta_client_name, requested_date_time, event_date_time, duration_ms, block_number, block_hash, parent_hash, gas_used, gas_limit, tx_count, blob_count, status, validation_error, method_version, meta_execution_implementation, meta_execution_version FROM `glamsterdam-pbt-1`.execution_engine_new_payload FINAL WHERE meta_network_name='glamsterdam-pbt-1' AND requested_date_time >= '2026-10-25 08:00:00' AND requested_date_time < '2026-10-26 08:00:00'",
+ "t0": "2026-10-25 08:00:00",
+ "t1": "2026-10-26 08:00:00",
+ "rows": 64799,
+ "bytes": 1615895,
+ "written": "2026-10-27T21:48:54+00:00"
+}

@@ -1,0 +1,9 @@
+{
+ "source": "clickhouse-raw glamsterdam-pbt-1.beacon_api_eth_v1_events_finalized_checkpoint",
+ "sql": "SELECT meta_client_name, event_date_time, block, state, epoch, execution_optimistic FROM `glamsterdam-pbt-1`.beacon_api_eth_v1_events_finalized_checkpoint FINAL WHERE meta_network_name='glamsterdam-pbt-1' AND event_date_time >= '2026-10-26 08:00:00' AND event_date_time < '2026-10-27 08:00:00'",
+ "t0": "2026-10-26 08:00:00",
+ "t1": "2026-10-27 08:00:00",
+ "rows": 2005,
+ "bytes": 28068,
+ "written": "2026-10-27T21:48:38+00:00"
+}

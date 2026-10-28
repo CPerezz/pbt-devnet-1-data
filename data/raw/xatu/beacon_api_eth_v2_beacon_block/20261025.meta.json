@@ -1,0 +1,9 @@
+{
+ "source": "clickhouse-raw glamsterdam-pbt-1.beacon_api_eth_v2_beacon_block",
+ "sql": "SELECT meta_client_name, event_date_time, slot, slot_start_date_time, block_root, block_version, block_total_bytes, proposer_index, builder_index, payload_present, execution_payload_block_hash, execution_payload_block_number, execution_payload_gas_limit, execution_payload_gas_used, execution_payload_transactions_count, execution_payload_transactions_total_bytes, execution_payload_blob_gas_used, bid_value, execution_payment FROM `glamsterdam-pbt-1`.beacon_api_eth_v2_beacon_block FINAL WHERE meta_network_name='glamsterdam-pbt-1' AND event_date_time >= '2026-10-25 08:00:00' AND event_date_time < '2026-10-26 08:00:00'",
+ "t0": "2026-10-25 08:00:00",
+ "t1": "2026-10-26 08:00:00",
+ "rows": 7204,
+ "bytes": 365369,
+ "written": "2026-10-27T21:50:45+00:00"
+}

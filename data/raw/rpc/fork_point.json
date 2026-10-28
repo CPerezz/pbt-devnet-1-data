@@ -1,0 +1,34 @@
+{
+ "last_shared_block": 24350000,
+ "first_devnet_block": 24350001,
+ "first_devnet_header": {
+  "number": 24350001,
+  "hash": "0x106ad4d3f2bda9f47e7b1349fe0f95df2548d56a69e206e543288a8366df21fa",
+  "parent_hash": "0x6aadde478df4f485c2cf91cd48038f918ef6ff97b19eec9cdd0cd1ca45476eb4",
+  "timestamp": 1769804040,
+  "gas_used": 0,
+  "gas_limit": 60058592,
+  "tx_count": 0,
+  "size": 643,
+  "miner": "0x0000000000000000000000000000000000000000",
+  "state_root": "0x054dd01c17bc57b0bef42c9f43960947863127441d8db0e240a41f2abd03ef8b",
+  "base_fee": 949830492,
+  "extra_data": "0x4e65746865726d696e642076312e33372e3061",
+  "bal_hash": ""
+ },
+ "last_shared_header": {
+  "number": 24350000,
+  "hash": "0x6aadde478df4f485c2cf91cd48038f918ef6ff97b19eec9cdd0cd1ca45476eb4",
+  "parent_hash": "0xd8a8fecd44218ac446f0999738f4ab43c903d8d790f0c8a9229283e237ad793f",
+  "timestamp": 1769804039,
+  "gas_used": 29055999,
+  "gas_limit": 60000000,
+  "tx_count": 387,
+  "size": 187189,
+  "miner": "0xdadb0d80178819f2319190d340ce9a924f783711",
+  "state_root": "0xe94ef9e1a426a7edced6b8eecd42d7fdb222810c112cd2bafabd196885bb72fe",
+  "base_fee": 953581248,
+  "extra_data": "0x4275696c6465724e6574202842656176657229",
+  "bal_hash": ""
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"beacon_head_state_(slot|finalized_epoch|current_justified_epoch)|beacon_block_delay_.*|execution_layer_.*|sync_eth2_synced|libp2p_peers\",network=\"glamsterdam-pbt-1\",job=\"consensus_node\",instance=\"glamsterdam-pbt-1-lighthouse-geth-1\"}",
+ "t0": "2026-10-25 08:00:00",
+ "t1": "2026-10-25 20:00:00",
+ "step": "30s",
+ "rows": 122485,
+ "bytes": 256783,
+ "written": "2026-10-27T21:53:01+00:00"
+}

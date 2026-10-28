@@ -1,0 +1,1455 @@
+{
+ "host": "nethermind-2",
+ "inspect": [
+  {
+   "Id": "1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3",
+   "Created": "2026-10-22T10:21:06.225184378Z",
+   "Path": "/nethermind/nethermind",
+   "Args": [
+    "--datadir=/data",
+    "--KeyStore.KeyStoreDirectory=/data/keystore",
+    "--Network.ExternalIp=201.79.83.218",
+    "--Network.P2PPort=30303",
+    "--Network.DiscoveryPort=30303",
+    "--JsonRpc.Enabled=true",
+    "--JsonRpc.Host=0.0.0.0",
+    "--JsonRpc.Port=8545",
+    "--Init.WebSocketsEnabled=true",
+    "--JsonRpc.WebSocketsPort=8545",
+    "--JsonRpc.JwtSecretFile=/execution-auth.jwt",
+    "--JsonRpc.EngineHost=0.0.0.0",
+    "--JsonRpc.EnginePort=8551",
+    "--Metrics.Enabled=true",
+    "--Metrics.NodeName=glamsterdam-pbt-1-lighthouse-nethermind-2",
+    "--Metrics.ExposePort=6060",
+    "--Metrics.ExposeHost=0.0.0.0",
+    "--KeyStore.EnodeKeyFile=/node-identity/node.key.plain",
+    "--config=mainnet",
+    "--Init.ChainSpecPath=/network-config/genesis-pbt.json",
+    "--Init.BaseDbPath=/data/mainnet",
+    "--FlatDb.Enabled=true",
+    "--FlatDb.Layout=Flat",
+    "--Merge.TerminalTotalDifficulty=0",
+    "--Sync.FastSync=false",
+    "--Sync.SnapSync=false",
+    "--JsonRpc.EnabledModules=Eth,Subscribe,TxPool,Web3,Personal,Proof,Net,Parity,Health,Rpc,Admin,Debug",
+    "--Discovery.Bootnodes=enr:-Iu4QAoMS-Uyu92xrjZqRJAq4WZMV_Kh3P0106cZddbup7qdOtwdrpszYkkYALzQ-acsqq4DIV9yfxXGTbTzib9YpZiAgmlkgnY0gmlwhKesvAuJc2VjcDI1NmsxoQMQ7WIPv976QvoSdwbvYKKk7yxTuiqKuxLTSWz1yyhaGYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QC_rQJ_8KvZcWM2beWeJ4zI7ExdFZIgD3U1UGdazbxH6ZeQYRt3qDAew3h8JsXIQreNd70lvGkTYVUaatmhm6hGAgmlkgnY0gmlwhJ9ZFb-Jc2VjcDI1NmsxoQKkpxBTNouMBefNm_MOB5ZNE5Co5l0TM6UyugDIm_MsboN0Y3CCdl-DdWRwgnZf,enr:-Iu4QG2yfCiS6jvqLIjhKv8mz3WI0klJTwY3V_HYpXqjUk-bcP6UA7Qk0WW5vVUlwMmQexXxNw4mZjKO-vAQgk8oSDaAgmlkgnY0gmlwhKRc72CJc2VjcDI1NmsxoQOFbTdb1bDWMK5aUsiAI5VPqdww2vdG87pMOeODyl2mgIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QHh34GSI5vVR1j1rq0fKKl5SjfwGQtD0PmWkxQ6q4PlWWy7BqXko2oXv_vNfbxPPDF_TocF5p7hXY-w3-4Ud8UqAgmlkgnY0gmlwhKRc-N6Jc2VjcDI1NmsxoQNvuP-FwjcNPRPa6WNJjWa9-O7ZTQI0YQ-m_CM4MhkvwYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QI5me6Zdyrizd4jnK3GnXTLGXwJsCkS2veEIdE-5qKsJG_DO4y5mZ3RyAcdX1Xl1Fs3aUg8_wpNyZmkOoGvcbEaAgmlkgnY0gmlwhC5l5iyJc2VjcDI1NmsxoQKIl5202Qn5rLfL0xbetwPu0A-vIO8cBzyK0ZNkgR2rPYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QIXLdrS07VhoaEzOZzid7VKA8FxoRKjnhe_5rLemQqJQK2UhnwDjZwMMbs3hBlKir2J4v8tu2MFwKUUhXd69R5iAgmlkgnY0gmlwhIpETNqJc2VjcDI1NmsxoQPGKErV_6kf0VtFL6e0RQnMM7iE44VHOIxv0PHPQX5ow4N0Y3CCdl-DdWRwgnZf,enr:-Iu4QKG83qhrryP3WwBJjTaYAneVcX5VoKmHF8Jy_R1_GWjDdJNTJ_P-0Mn3M6p3HNmVceG4rvqha6457qYEkq2RePaAgmlkgnY0gmlwhC5ln-mJc2VjcDI1NmsxoQIglr3laBMIy9HBma_pgOaN0wesDw-iwUxoh_vahTZmRIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QOkiyZEyGUJ2MbSZAlf6SoZQnK8J3vUV4VepHxLrSm80QlMHF6jtMtKlnx9BfKYw42g_jVpS9pcWdjGFU_OQZoeAgmlkgnY0gmlwhKRcq_SJc2VjcDI1NmsxoQOMHuO03JjdeoBR2qn8oNsQpAD7_fdi5crwD51i1RBZ54N0Y3CCdl-DdWRwgnZf",
+    "--Discovery.DiscoveryVersion=V5",
+    "--Network.EnableEnrDiscovery=false",
+    "--Discovery.UseDefaultDiscv5Bootnodes=false",
+    "--Pruning.Mode=None",
+    "--TxPool.Size=20000",
+    "--Init.MemoryHint=12000000000",
+    "--log=INFO",
+    "--Seq.MinLevel=Info",
+    "--Seq.ServerUrl=https://seq.nethermind.io",
+    "--Seq.ApiKey=<redacted>",
+    "--Metrics.PushGatewayUrl=<redacted>",
+    "--Pbt.Enabled=true",
+    "--FlatDb.HistoryEnabled=false",
+    "--Pbt.MigrationSnapshotPath=/pbt-migration-input/pbt-snapshot.bin",
+    "--Pbt.MigrationPreimagesPath=/pbt-migration-input/framed.bin",
+    "--Pbt.MigrationAnchor=24453558"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 81499,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-22T10:21:06.317743985Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+   },
+   "Image": "sha256:60bb6209888af0b5e11622cff15a7a14c64f3849b0aeb50b46a1a77f64b75d17",
+   "ResolvConfPath": "/var/lib/docker/containers/1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3/hostname",
+   "HostsPath": "/var/lib/docker/containers/1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3/hosts",
+   "LogPath": "/var/lib/docker/containers/1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3/1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3-json.log",
+   "Name": "/execution",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/pbt-1/nethermind:/data:rw",
+     "/data/pbt-1/node-identity:/node-identity:ro",
+     "/data/execution-auth.secret:/execution-auth.jwt:ro",
+     "/data/ethereum-network-config/metadata:/network-config:ro",
+     "/data/pbt-1/migration-input-24453558:/pbt-migration-input:rw"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {
+     "30303/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "30303/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "6060/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "6060"
+      }
+     ],
+     "8545/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8545"
+      }
+     ],
+     "8551/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8551"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 34359738368,
+    "NanoCpus": 8000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "0-7",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 34359738368,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/pbt-1/nethermind",
+     "Destination": "/data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/execution-auth.secret",
+     "Destination": "/execution-auth.jwt",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/pbt-1/node-identity",
+     "Destination": "/node-identity",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/pbt-1/migration-input-24453558",
+     "Destination": "/pbt-migration-input",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "volume",
+     "Name": "7e88d02dc358184ca91193fa3b3ca10356bb3728625f4f4f1270b08b36166e13",
+     "Source": "/var/lib/docker/volumes/7e88d02dc358184ca91193fa3b3ca10356bb3728625f4f4f1270b08b36166e13/_data",
+     "Destination": "/nethermind/keystore",
+     "Driver": "local",
+     "Mode": "",
+     "RW": true,
+     "Propagation": ""
+    },
+    {
+     "Type": "volume",
+     "Name": "614e47de2c436e7afe9a13ad5eb8d281f139f2b82340559a557844f22c82f97e",
+     "Source": "/var/lib/docker/volumes/614e47de2c436e7afe9a13ad5eb8d281f139f2b82340559a557844f22c82f97e/_data",
+     "Destination": "/nethermind/logs",
+     "Driver": "local",
+     "Mode": "",
+     "RW": true,
+     "Propagation": ""
+    },
+    {
+     "Type": "volume",
+     "Name": "9968f6f6063d9e53e7b65924568b58745b8c88caa7b4ed6972393b70a43bf318",
+     "Source": "/var/lib/docker/volumes/9968f6f6063d9e53e7b65924568b58745b8c88caa7b4ed6972393b70a43bf318/_data",
+     "Destination": "/nethermind/nethermind_db",
+     "Driver": "local",
+     "Mode": "",
+     "RW": true,
+     "Propagation": ""
+    }
+   ],
+   "Config": {
+    "Hostname": "1cd783b8c3f4",
+    "Domainname": "",
+    "User": "1003",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "30303/tcp": {},
+     "30303/udp": {},
+     "6060/tcp": {},
+     "8545/tcp": {},
+     "8551/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "VIRTUAL_HOST=rpc-lighthouse-nethermind-2.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "VIRTUAL_PORT=8545",
+     "LETSENCRYPT_HOST=rpc-lighthouse-nethermind-2.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "APP_UID=1654",
+     "ASPNETCORE_HTTP_PORTS=8080",
+     "DOTNET_RUNNING_IN_CONTAINER=true",
+     "DOTNET_VERSION=10.0.13",
+     "ASPNET_VERSION=10.0.13",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "--datadir=/data",
+     "--KeyStore.KeyStoreDirectory=/data/keystore",
+     "--Network.ExternalIp=201.79.83.218",
+     "--Network.P2PPort=30303",
+     "--Network.DiscoveryPort=30303",
+     "--JsonRpc.Enabled=true",
+     "--JsonRpc.Host=0.0.0.0",
+     "--JsonRpc.Port=8545",
+     "--Init.WebSocketsEnabled=true",
+     "--JsonRpc.WebSocketsPort=8545",
+     "--JsonRpc.JwtSecretFile=/execution-auth.jwt",
+     "--JsonRpc.EngineHost=0.0.0.0",
+     "--JsonRpc.EnginePort=8551",
+     "--Metrics.Enabled=true",
+     "--Metrics.NodeName=glamsterdam-pbt-1-lighthouse-nethermind-2",
+     "--Metrics.ExposePort=6060",
+     "--Metrics.ExposeHost=0.0.0.0",
+     "--KeyStore.EnodeKeyFile=/node-identity/node.key.plain",
+     "--config=mainnet",
+     "--Init.ChainSpecPath=/network-config/genesis-pbt.json",
+     "--Init.BaseDbPath=/data/mainnet",
+     "--FlatDb.Enabled=true",
+     "--FlatDb.Layout=Flat",
+     "--Merge.TerminalTotalDifficulty=0",
+     "--Sync.FastSync=false",
+     "--Sync.SnapSync=false",
+     "--JsonRpc.EnabledModules=Eth,Subscribe,TxPool,Web3,Personal,Proof,Net,Parity,Health,Rpc,Admin,Debug",
+     "--Discovery.Bootnodes=enr:-Iu4QAoMS-Uyu92xrjZqRJAq4WZMV_Kh3P0106cZddbup7qdOtwdrpszYkkYALzQ-acsqq4DIV9yfxXGTbTzib9YpZiAgmlkgnY0gmlwhKesvAuJc2VjcDI1NmsxoQMQ7WIPv976QvoSdwbvYKKk7yxTuiqKuxLTSWz1yyhaGYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QC_rQJ_8KvZcWM2beWeJ4zI7ExdFZIgD3U1UGdazbxH6ZeQYRt3qDAew3h8JsXIQreNd70lvGkTYVUaatmhm6hGAgmlkgnY0gmlwhJ9ZFb-Jc2VjcDI1NmsxoQKkpxBTNouMBefNm_MOB5ZNE5Co5l0TM6UyugDIm_MsboN0Y3CCdl-DdWRwgnZf,enr:-Iu4QG2yfCiS6jvqLIjhKv8mz3WI0klJTwY3V_HYpXqjUk-bcP6UA7Qk0WW5vVUlwMmQexXxNw4mZjKO-vAQgk8oSDaAgmlkgnY0gmlwhKRc72CJc2VjcDI1NmsxoQOFbTdb1bDWMK5aUsiAI5VPqdww2vdG87pMOeODyl2mgIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QHh34GSI5vVR1j1rq0fKKl5SjfwGQtD0PmWkxQ6q4PlWWy7BqXko2oXv_vNfbxPPDF_TocF5p7hXY-w3-4Ud8UqAgmlkgnY0gmlwhKRc-N6Jc2VjcDI1NmsxoQNvuP-FwjcNPRPa6WNJjWa9-O7ZTQI0YQ-m_CM4MhkvwYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QI5me6Zdyrizd4jnK3GnXTLGXwJsCkS2veEIdE-5qKsJG_DO4y5mZ3RyAcdX1Xl1Fs3aUg8_wpNyZmkOoGvcbEaAgmlkgnY0gmlwhC5l5iyJc2VjcDI1NmsxoQKIl5202Qn5rLfL0xbetwPu0A-vIO8cBzyK0ZNkgR2rPYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QIXLdrS07VhoaEzOZzid7VKA8FxoRKjnhe_5rLemQqJQK2UhnwDjZwMMbs3hBlKir2J4v8tu2MFwKUUhXd69R5iAgmlkgnY0gmlwhIpETNqJc2VjcDI1NmsxoQPGKErV_6kf0VtFL6e0RQnMM7iE44VHOIxv0PHPQX5ow4N0Y3CCdl-DdWRwgnZf,enr:-Iu4QKG83qhrryP3WwBJjTaYAneVcX5VoKmHF8Jy_R1_GWjDdJNTJ_P-0Mn3M6p3HNmVceG4rvqha6457qYEkq2RePaAgmlkgnY0gmlwhC5ln-mJc2VjcDI1NmsxoQIglr3laBMIy9HBma_pgOaN0wesDw-iwUxoh_vahTZmRIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QOkiyZEyGUJ2MbSZAlf6SoZQnK8J3vUV4VepHxLrSm80QlMHF6jtMtKlnx9BfKYw42g_jVpS9pcWdjGFU_OQZoeAgmlkgnY0gmlwhKRcq_SJc2VjcDI1NmsxoQOMHuO03JjdeoBR2qn8oNsQpAD7_fdi5crwD51i1RBZ54N0Y3CCdl-DdWRwgnZf",
+     "--Discovery.DiscoveryVersion=V5",
+     "--Network.EnableEnrDiscovery=false",
+     "--Discovery.UseDefaultDiscv5Bootnodes=false",
+     "--Pruning.Mode=None",
+     "--TxPool.Size=20000",
+     "--Init.MemoryHint=12000000000",
+     "--log=INFO",
+     "--Seq.MinLevel=Info",
+     "--Seq.ServerUrl=https://seq.nethermind.io",
+     "--Seq.ApiKey=<redacted>",
+     "--Metrics.PushGatewayUrl=<redacted>",
+     "--Pbt.Enabled=true",
+     "--FlatDb.HistoryEnabled=false",
+     "--Pbt.MigrationSnapshotPath=/pbt-migration-input/pbt-snapshot.bin",
+     "--Pbt.MigrationPreimagesPath=/pbt-migration-input/framed.bin",
+     "--Pbt.MigrationAnchor=24453558"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/nethermind@sha256:60bb6209888af0b5e11622cff15a7a14c64f3849b0aeb50b46a1a77f64b75d17",
+    "Volumes": {
+     "/nethermind/keystore": {},
+     "/nethermind/logs": {},
+     "/nethermind/nethermind_db": {}
+    },
+    "WorkingDir": "/nethermind",
+    "Entrypoint": [
+     "/nethermind/nethermind"
+    ],
+    "Labels": {
+     "buildnum": "163",
+     "commit": "f4e2951",
+     "ethpandaops.io.commitRef": "f4e295193e426230547c59dcdb8decb25d725418",
+     "ethpandaops.io.repo": "NethermindEth/nethermind",
+     "org.opencontainers.image.created": "1970-01-01T00:00:00Z",
+     "org.opencontainers.image.description": "A robust execution client for Ethereum node operators.",
+     "org.opencontainers.image.documentation": "https://docs.nethermind.io",
+     "org.opencontainers.image.licenses": "LGPL-3.0-only",
+     "org.opencontainers.image.revision": "f4e295193e426230547c59dcdb8decb25d725418",
+     "org.opencontainers.image.source": "https://github.com/NethermindEth/nethermind",
+     "org.opencontainers.image.title": "Nethermind",
+     "org.opencontainers.image.url": "https://nethermind.io/nethermind-client",
+     "org.opencontainers.image.vendor": "Demerzel Solutions Limited",
+     "org.opencontainers.image.version": "f4e295193e426230547c59dcdb8decb25d725418-f4e2951",
+     "version": "f4e295193e426230547c59dcdb8decb25d725418"
+    },
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "358f163c754777bee9f3a970a61f96a69c8263d6225e3af0a6e50a37de0b19bf",
+    "SandboxKey": "/var/run/docker/netns/358f163c7547",
+    "Ports": {
+     "30303/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "30303/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "30303"
+      }
+     ],
+     "6060/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "6060"
+      }
+     ],
+     "8545/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8545"
+      }
+     ],
+     "8551/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8551"
+      }
+     ]
+    },
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:272f:600e"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "0d58f7569e0be24f73676b9d48dd7da7491aa5e0a256ad00856df6671160c4fe",
+      "EndpointID": "eef2f7c8effd314941b864f5ddbca7295228777cdecdfb5646f6c52c282403b1",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.4",
+      "MacAddress": "22:4e:47:73:56:3e",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:272f:6001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:272f:600e",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "execution",
+       "1cd783b8c3f4"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:70df419b6a85339425223e6843b2ce9b5d21af4b3e33d62b9099d8f19c22ab24",
+    "size": 2196,
+    "platform": {
+     "architecture": "amd64",
+     "os": "linux"
+    }
+   }
+  },
+  {
+   "Id": "7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b",
+   "Created": "2026-10-22T08:17:53.174214306Z",
+   "Path": "lighthouse",
+   "Args": [
+    "beacon_node",
+    "--datadir=/data",
+    "--disable-upnp",
+    "--disable-enr-auto-update",
+    "--enr-address=201.79.83.218",
+    "--enr-tcp-port=9000",
+    "--enr-udp-port=9000",
+    "--listen-address=0.0.0.0",
+    "--port=9000",
+    "--discovery-port=9000",
+    "--http",
+    "--http-address=0.0.0.0",
+    "--http-port=5052",
+    "--execution-jwt=/execution-auth.jwt",
+    "--execution-endpoint=http://snooper-engine:8561",
+    "--metrics",
+    "--metrics-address=0.0.0.0",
+    "--metrics-allow-origin=*",
+    "--metrics-port=5054",
+    "--quic-port=9001",
+    "--enr-quic-port=9001",
+    "--listen-address=::",
+    "--enr-address=2a03:b0c0:3:f0:0:3:272f:600b",
+    "--enr-tcp6-port=9000",
+    "--enr-udp6-port=9000",
+    "--port6=9000",
+    "--discovery-port6=9000",
+    "--quic-port6=9001",
+    "--enr-quic6-port=9001",
+    "--testnet-dir=/network-config",
+    "--boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA",
+    "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+    "--ignore-ws-check",
+    "--enable-fast-confirmation",
+    "--debug-level=debug"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 60669,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-22T08:17:53.273638914Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+   },
+   "Image": "sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "ResolvConfPath": "/var/lib/docker/containers/7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b/hostname",
+   "HostsPath": "/var/lib/docker/containers/7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b/hosts",
+   "LogPath": "/var/lib/docker/containers/7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b/7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b-json.log",
+   "Name": "/beacon",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/lighthouse:/data:rw",
+     "/data/execution-auth.secret:/execution-auth.jwt:ro",
+     "/data/ethereum-network-config/metadata:/network-config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {
+     "5052/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5052"
+      }
+     ],
+     "5054/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5054"
+      }
+     ],
+     "9000/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9000/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9001/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ],
+     "9001/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/lighthouse",
+     "Destination": "/data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/execution-auth.secret",
+     "Destination": "/execution-auth.jwt",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    }
+   ],
+   "Config": {
+    "Hostname": "7abfe3127ca9",
+    "Domainname": "",
+    "User": "1006",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "5052/tcp": {},
+     "5054/tcp": {},
+     "9000/tcp": {},
+     "9000/udp": {},
+     "9001/tcp": {},
+     "9001/udp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "VIRTUAL_HOST=bn-lighthouse-nethermind-2.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "VIRTUAL_PORT=5052",
+     "LETSENCRYPT_HOST=bn-lighthouse-nethermind-2.srv.glamsterdam-pbt-1.ethpandaops.io",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "lighthouse",
+     "beacon_node",
+     "--datadir=/data",
+     "--disable-upnp",
+     "--disable-enr-auto-update",
+     "--enr-address=201.79.83.218",
+     "--enr-tcp-port=9000",
+     "--enr-udp-port=9000",
+     "--listen-address=0.0.0.0",
+     "--port=9000",
+     "--discovery-port=9000",
+     "--http",
+     "--http-address=0.0.0.0",
+     "--http-port=5052",
+     "--execution-jwt=/execution-auth.jwt",
+     "--execution-endpoint=http://snooper-engine:8561",
+     "--metrics",
+     "--metrics-address=0.0.0.0",
+     "--metrics-allow-origin=*",
+     "--metrics-port=5054",
+     "--quic-port=9001",
+     "--enr-quic-port=9001",
+     "--listen-address=::",
+     "--enr-address=2a03:b0c0:3:f0:0:3:272f:600b",
+     "--enr-tcp6-port=9000",
+     "--enr-udp6-port=9000",
+     "--port6=9000",
+     "--discovery-port6=9000",
+     "--quic-port6=9001",
+     "--enr-quic6-port=9001",
+     "--testnet-dir=/network-config",
+     "--boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA",
+     "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+     "--ignore-ws-check",
+     "--enable-fast-confirmation",
+     "--debug-level=debug"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+    "Volumes": null,
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "Labels": {
+     "buildnum": "343",
+     "commit": "81a7029",
+     "ethpandaops.io.commitRef": "81a702910e64e640bff832c81bc78b781c5ea812",
+     "ethpandaops.io.repo": "sigp/lighthouse",
+     "org.opencontainers.image.version": "24.04",
+     "version": "81a702910e64e640bff832c81bc78b781c5ea812"
+    },
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "e5c1f189a021738c4af1f7dd52ca33ddc03a49577fa38023cc05f69398009887",
+    "SandboxKey": "/var/run/docker/netns/e5c1f189a021",
+    "Ports": {
+     "5052/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5052"
+      }
+     ],
+     "5054/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "5054"
+      }
+     ],
+     "9000/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9000/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9000"
+      }
+     ],
+     "9001/tcp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ],
+     "9001/udp": [
+      {
+       "HostIp": "0.0.0.0",
+       "HostPort": "9001"
+      }
+     ]
+    },
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:272f:600b"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "0d58f7569e0be24f73676b9d48dd7da7491aa5e0a256ad00856df6671160c4fe",
+      "EndpointID": "643b2b23b4c15501cfd96f05584fea906682276f1d19b56d147006239af5eb30",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.6",
+      "MacAddress": "7e:b0:bc:b4:d3:5b",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:272f:6001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:272f:600b",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "beacon",
+       "7abfe3127ca9"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:8f22467a615e0882b6bfebe125a128a8af899535f990fec89775604de2c0ab33",
+    "size": 867,
+    "platform": {
+     "architecture": "amd64",
+     "os": "linux"
+    }
+   }
+  },
+  {
+   "Id": "08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b",
+   "Created": "2026-10-22T08:17:55.496440579Z",
+   "Path": "lighthouse",
+   "Args": [
+    "validator_client",
+    "--validators-dir=/validator-data/keys",
+    "--secrets-dir=/validator-data/secrets",
+    "--beacon-nodes=http://beacon:5052",
+    "--init-slashing-protection",
+    "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+    "--metrics",
+    "--metrics-address=0.0.0.0",
+    "--metrics-allow-origin=*",
+    "--metrics-port=5054",
+    "--testnet-dir=/network-config",
+    "--graffiti=lighthouse-nethermind-2",
+    "--builder-proposals"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 61008,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-22T08:17:55.59151394Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+   },
+   "Image": "sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "ResolvConfPath": "/var/lib/docker/containers/08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b/hostname",
+   "HostsPath": "/var/lib/docker/containers/08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b/hosts",
+   "LogPath": "/var/lib/docker/containers/08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b/08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b-json.log",
+   "Name": "/validator",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "docker-default",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "/data/lighthouse-validator:/validator-data:rw",
+     "/data/ethereum-network-config/metadata:/network-config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {
+      "max-file": "8",
+      "max-size": "500m"
+     }
+    },
+    "NetworkMode": "shared",
+    "PortBindings": {},
+    "RestartPolicy": {
+     "Name": "always",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": [],
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/data/ethereum-network-config/metadata",
+     "Destination": "/network-config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "bind",
+     "Source": "/data/lighthouse-validator",
+     "Destination": "/validator-data",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": "rprivate"
+    }
+   ],
+   "Config": {
+    "Hostname": "08a4b0801b7c",
+    "Domainname": "",
+    "User": "1006",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "GOPROXY=https://goproxy.primary.production.platform.ethpandaops.io"
+    ],
+    "Cmd": [
+     "lighthouse",
+     "validator_client",
+     "--validators-dir=/validator-data/keys",
+     "--secrets-dir=/validator-data/secrets",
+     "--beacon-nodes=http://beacon:5052",
+     "--init-slashing-protection",
+     "--suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134",
+     "--metrics",
+     "--metrics-address=0.0.0.0",
+     "--metrics-allow-origin=*",
+     "--metrics-port=5054",
+     "--testnet-dir=/network-config",
+     "--graffiti=lighthouse-nethermind-2",
+     "--builder-proposals"
+    ],
+    "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+    "Volumes": null,
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "Labels": {
+     "buildnum": "343",
+     "commit": "81a7029",
+     "ethpandaops.io.commitRef": "81a702910e64e640bff832c81bc78b781c5ea812",
+     "ethpandaops.io.repo": "sigp/lighthouse",
+     "org.opencontainers.image.version": "24.04",
+     "version": "81a702910e64e640bff832c81bc78b781c5ea812"
+    },
+    "StopTimeout": 300
+   },
+   "NetworkSettings": {
+    "SandboxID": "a59212847fa0e30f85d6d71b3b6964b34e6f5fc63ffe654bb9afe3a2ba0e34d9",
+    "SandboxKey": "/var/run/docker/netns/a59212847fa0",
+    "Ports": {},
+    "Networks": {
+     "shared": {
+      "IPAMConfig": {
+       "IPv6Address": "2a03:b0c0:3:f0:0:3:272f:600a"
+      },
+      "Links": null,
+      "Aliases": null,
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "0d58f7569e0be24f73676b9d48dd7da7491aa5e0a256ad00856df6671160c4fe",
+      "EndpointID": "d153ca4983005b9674adc0d2b8d5be29b614c7549c225720fb20214c8b578b0f",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.9",
+      "MacAddress": "46:94:de:3b:b1:a8",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "2a03:b0c0:3:f0:0:3:272f:6001",
+      "GlobalIPv6Address": "2a03:b0c0:3:f0:0:3:272f:600a",
+      "GlobalIPv6PrefixLen": 124,
+      "DNSNames": [
+       "validator",
+       "08a4b0801b7c"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "digest": "sha256:8f22467a615e0882b6bfebe125a128a8af899535f990fec89775604de2c0ab33",
+    "size": 867,
+    "platform": {
+     "architecture": "amd64",
+     "os": "linux"
+    }
+   }
+  }
+ ],
+ "ps": [
+  {
+   "Command": "\"/usr/bin/entrypoint.sh --docker_only=true --housekeeping_interval=15s --store_container_labels=false --disable_metrics=advtcp,cpu_topology,cpuset,hugetlb,memory_numa,percpu,process,referenced_memory,resctrl,sched,tcp,udp\"",
+   "CreatedAt": "2026-10-22 11:30:20 +0000 UTC",
+   "HealthStatus": "healthy",
+   "ID": "486b7cafe334173308477261dc78eefa0579e1f2a3da2cdd19cca8f5d34dd73a",
+   "Image": "ghcr.io/google/cadvisor:v0.60.6@sha256:b8e7d1093144fd088f425ff003d75a4aa405de075db78dae3bc563730b1bd07a",
+   "Labels": "org.opencontainers.image.created=2026-09-18T22:45:24.202Z,org.opencontainers.image.description=Analyzes resource usage and performance characteristics of running containers.,org.opencontainers.image.licenses=NOASSERTION,org.opencontainers.image.revision=5bf5d43ac6f60d7ee36a13b4d5b4a78ad2d0abc7,org.opencontainers.image.source=https://github.com/google/cadvisor,org.opencontainers.image.title=cadvisor,org.opencontainers.image.url=https://github.com/google/cadvisor,org.opencontainers.image.version=0.60.6",
+   "LocalVolumes": "0",
+   "Mounts": "/,/sys,/dev/disk,/var/run,/var/lib/docker",
+   "Names": "cadvisor",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "8080/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "36.9kB (virtual 76MB)",
+   "State": "running",
+   "Status": "Up 5 days (healthy)"
+  },
+  {
+   "Command": "\"/nethermind/nethermind --datadir=/data --KeyStore.KeyStoreDirectory=/data/keystore --Network.ExternalIp=201.79.83.218 --Network.P2PPort=30303 --Network.DiscoveryPort=30303 --JsonRpc.Enabled=true --JsonRpc.Host=0.0.0.0 --JsonRpc.Port=8545 --Init.WebSocketsEnabled=true --JsonRpc.WebSocketsPort=8545 --JsonRpc.JwtSecretFile=/execution-auth.jwt --JsonRpc.EngineHost=0.0.0.0 --JsonRpc.EnginePort=8551 --Metrics.Enabled=true --Metrics.NodeName=glamsterdam-pbt-1-lighthouse-nethermind-2 --Metrics.ExposePort=6060 --Metrics.ExposeHost=0.0.0.0 --KeyStore.EnodeKeyFile=/node-identity/node.key.plain --config=mainnet --Init.ChainSpecPath=/network-config/genesis-pbt.json --Init.BaseDbPath=/data/mainnet --FlatDb.Enabled=true --FlatDb.Layout=Flat --Merge.TerminalTotalDifficulty=0 --Sync.FastSync=false --Sync.SnapSync=false --JsonRpc.EnabledModules=Eth,Subscribe,TxPool,Web3,Personal,Proof,Net,Parity,Health,Rpc,Admin,Debug --Discovery.Bootnodes=enr:-Iu4QAoMS-Uyu92xrjZqRJAq4WZMV_Kh3P0106cZddbup7qdOtwdrpszYkkYALzQ-acsqq4DIV9yfxXGTbTzib9YpZiAgmlkgnY0gmlwhKesvAuJc2VjcDI1NmsxoQMQ7WIPv976QvoSdwbvYKKk7yxTuiqKuxLTSWz1yyhaGYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QC_rQJ_8KvZcWM2beWeJ4zI7ExdFZIgD3U1UGdazbxH6ZeQYRt3qDAew3h8JsXIQreNd70lvGkTYVUaatmhm6hGAgmlkgnY0gmlwhJ9ZFb-Jc2VjcDI1NmsxoQKkpxBTNouMBefNm_MOB5ZNE5Co5l0TM6UyugDIm_MsboN0Y3CCdl-DdWRwgnZf,enr:-Iu4QG2yfCiS6jvqLIjhKv8mz3WI0klJTwY3V_HYpXqjUk-bcP6UA7Qk0WW5vVUlwMmQexXxNw4mZjKO-vAQgk8oSDaAgmlkgnY0gmlwhKRc72CJc2VjcDI1NmsxoQOFbTdb1bDWMK5aUsiAI5VPqdww2vdG87pMOeODyl2mgIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QHh34GSI5vVR1j1rq0fKKl5SjfwGQtD0PmWkxQ6q4PlWWy7BqXko2oXv_vNfbxPPDF_TocF5p7hXY-w3-4Ud8UqAgmlkgnY0gmlwhKRc-N6Jc2VjcDI1NmsxoQNvuP-FwjcNPRPa6WNJjWa9-O7ZTQI0YQ-m_CM4MhkvwYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QI5me6Zdyrizd4jnK3GnXTLGXwJsCkS2veEIdE-5qKsJG_DO4y5mZ3RyAcdX1Xl1Fs3aUg8_wpNyZmkOoGvcbEaAgmlkgnY0gmlwhC5l5iyJc2VjcDI1NmsxoQKIl5202Qn5rLfL0xbetwPu0A-vIO8cBzyK0ZNkgR2rPYN0Y3CCdl-DdWRwgnZf,enr:-Iu4QIXLdrS07VhoaEzOZzid7VKA8FxoRKjnhe_5rLemQqJQK2UhnwDjZwMMbs3hBlKir2J4v8tu2MFwKUUhXd69R5iAgmlkgnY0gmlwhIpETNqJc2VjcDI1NmsxoQPGKErV_6kf0VtFL6e0RQnMM7iE44VHOIxv0PHPQX5ow4N0Y3CCdl-DdWRwgnZf,enr:-Iu4QKG83qhrryP3WwBJjTaYAneVcX5VoKmHF8Jy_R1_GWjDdJNTJ_P-0Mn3M6p3HNmVceG4rvqha6457qYEkq2RePaAgmlkgnY0gmlwhC5ln-mJc2VjcDI1NmsxoQIglr3laBMIy9HBma_pgOaN0wesDw-iwUxoh_vahTZmRIN0Y3CCdl-DdWRwgnZf,enr:-Iu4QOkiyZEyGUJ2MbSZAlf6SoZQnK8J3vUV4VepHxLrSm80QlMHF6jtMtKlnx9BfKYw42g_jVpS9pcWdjGFU_OQZoeAgmlkgnY0gmlwhKRcq_SJc2VjcDI1NmsxoQOMHuO03JjdeoBR2qn8oNsQpAD7_fdi5crwD51i1RBZ54N0Y3CCdl-DdWRwgnZf --Discovery.DiscoveryVersion=V5 --Network.EnableEnrDiscovery=false --Discovery.UseDefaultDiscv5Bootnodes=false --Pruning.Mode=None --TxPool.Size=20000 --Init.MemoryHint=12000000000 --log=INFO --Seq.MinLevel=Info --Seq.ServerUrl=https://seq.nethermind.io --Seq.ApiKey=<redacted> --Metrics.PushGatewayUrl=<redacted> --Pbt.Enabled=true --FlatDb.HistoryEnabled=false --Pbt.MigrationSnapshotPath=/pbt-migration-input/pbt-snapshot.bin --Pbt.MigrationPreimagesPath=/pbt-migration-input/framed.bin --Pbt.MigrationAnchor=24453558\"",
+   "CreatedAt": "2026-10-22 10:21:06 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "1cd783b8c3f43026316d2b63d5cb23301fda9746ff39237c7490c7052af9c0c3",
+   "Image": "registry-1.docker.io/ethpandaops/nethermind@sha256:60bb6209888af0b5e11622cff15a7a14c64f3849b0aeb50b46a1a77f64b75d17",
+   "Labels": "buildnum=163,commit=f4e2951,ethpandaops.io.commitRef=f4e295193e426230547c59dcdb8decb25d725418,ethpandaops.io.repo=NethermindEth/nethermind,org.opencontainers.image.created=1970-01-01T00:00:00Z,org.opencontainers.image.description=A robust execution client for Ethereum node operators.,org.opencontainers.image.documentation=https://docs.nethermind.io,org.opencontainers.image.licenses=LGPL-3.0-only,org.opencontainers.image.revision=f4e295193e426230547c59dcdb8decb25d725418,org.opencontainers.image.source=https://github.com/NethermindEth/nethermind,org.opencontainers.image.title=Nethermind,org.opencontainers.image.url=https://nethermind.io/nethermind-client,org.opencontainers.image.vendor=Demerzel Solutions Limited,org.opencontainers.image.version=f4e295193e426230547c59dcdb8decb25d725418-f4e2951,version=f4e295193e426230547c59dcdb8decb25d725418",
+   "LocalVolumes": "3",
+   "Mounts": "/data/pbt-1/nethermind,/data/execution-auth.secret,/data/ethereum-network-config/metadata,/data/pbt-1/node-identity,/data/pbt-1/migration-input-24453558,7e88d02dc358184ca91193fa3b3ca10356bb3728625f4f4f1270b08b36166e13,614e47de2c436e7afe9a13ad5eb8d281f139f2b82340559a557844f22c82f97e,9968f6f6063d9e53e7b65924568b58745b8c88caa7b4ed6972393b70a43bf318",
+   "Names": "execution",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "127.0.0.1:6060->6060/tcp, 127.0.0.1:8545->8545/tcp, 127.0.0.1:8551->8551/tcp, 0.0.0.0:30303->30303/tcp, 0.0.0.0:30303->30303/udp",
+   "RunningFor": "5 days ago",
+   "Size": "82.6MB (virtual 558MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/bin/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus --storage.tsdb.retention.size=1GB --storage.tsdb.retention.time=2d\"",
+   "CreatedAt": "2026-10-22 08:47:24 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "98f4b180020a1344c9c052b2d4e63f7ba26aa21bb3719db59caaff8abe55ba17",
+   "Image": "registry-1.docker.io/prom/prometheus:v2.40.7",
+   "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>",
+   "LocalVolumes": "0",
+   "Mounts": "/data/prometheus/data,/data/prometheus/etc",
+   "Names": "prometheus",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "127.0.0.1:9090->9090/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "4.1kB (virtual 226MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"lighthouse validator_client --validators-dir=/validator-data/keys --secrets-dir=/validator-data/secrets --beacon-nodes=http://beacon:5052 --init-slashing-protection --suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134 --metrics --metrics-address=0.0.0.0 --metrics-allow-origin=* --metrics-port=5054 --testnet-dir=/network-config --graffiti=lighthouse-nethermind-2 --builder-proposals\"",
+   "CreatedAt": "2026-10-22 08:17:55 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "08a4b0801b7ca8407c35dc76c4e4764087e8361c57fb689b204d951dff50368b",
+   "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "Labels": "buildnum=343,commit=81a7029,ethpandaops.io.commitRef=81a702910e64e640bff832c81bc78b781c5ea812,ethpandaops.io.repo=sigp/lighthouse,org.opencontainers.image.version=24.04,version=81a702910e64e640bff832c81bc78b781c5ea812",
+   "LocalVolumes": "0",
+   "Mounts": "/data/ethereum-network-config/metadata,/data/lighthouse-validator",
+   "Names": "validator",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "12.3kB (virtual 283MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"lighthouse beacon_node --datadir=/data --disable-upnp --disable-enr-auto-update --enr-address=201.79.83.218 --enr-tcp-port=9000 --enr-udp-port=9000 --listen-address=0.0.0.0 --port=9000 --discovery-port=9000 --http --http-address=0.0.0.0 --http-port=5052 --execution-jwt=/execution-auth.jwt --execution-endpoint=http://snooper-engine:8561 --metrics --metrics-address=0.0.0.0 --metrics-allow-origin=* --metrics-port=5054 --quic-port=9001 --enr-quic-port=9001 --listen-address=:: --enr-address=2a03:b0c0:3:f0:0:3:272f:600b --enr-tcp6-port=9000 --enr-udp6-port=9000 --port6=9000 --discovery-port6=9000 --quic-port6=9001 --enr-quic6-port=9001 --testnet-dir=/network-config --boot-nodes=enr:-QEAuEB6YnrVu3QwOjhcMBl6BCR0RfXLAgI2_SCtc3tCfnu4lHLZBDrQDMxGDKg-PSXcOC_0sL0bdUGpnkhC6OAYOR0oA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhIpETNqDaXA2kCoDsMAAAwDwAAAAAyWNsAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAyUjBJow__S-2T8zUExMIAJY2HFXV7O4fuu5bGRhiCcaiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEB1Czyy4nmJvi6BIirwtVlRvePQzBqrrEw6iMzSPELexkZugCgTzrM-8FpA-ulO0W_cf9YoyL5SNqnUaS9dl79KA4dhdHRuZXRziAAAAACAAQAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc-N6DaXA2kCoDsMAAAwDwAAAAAycvIAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA8-7PbFkuaUPIC1jY2nDenYHoXkDaKCgGDu6v6bewlNhiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECL3QAgahZ_RykH43hQm6_7XmtPRkZ0H_yUJbHOfznZy2hffMK_5E0zbBrpz-WwdqvyWKxGABRPXNplVEGotNDuA4dhdHRuZXRziAAAAAAAAMAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5l5iyDaXA2kCoDsMAAAwDwAAAAAyWNYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhApPOkVeGY_kvN5OmeibQ2uv5JvAhUzWxnefz8YA-ZyOjiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAt9VoOVCg6wPN9pfEBbBO0sFleZMIUvfS1g-W1V7fsImH8p7VBD1AyIAIfQxS6yhUO_lp-_yTZbyiy8-tC3CanA4dhdHRuZXRziAAAAwAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhC5ln-mDaXA2kCoDsMAAAwDwAAAAAycvMAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA7wGzOrkMkiUv9TLpna_0hnvhYXm52KRLIs-VdW8IlBTiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEDKRY87gerLKTyOyvpU-JpGkG3VQ4mLO6O7JXB8YksIx0micPq0CbvuILwNizV_V040oz-_QNs6rAyWnN5Ugjl5A4dhdHRuZXRziAAAAIABAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRcq_SDaXA2kCoDsMAAAwDwAAAAAycvQAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAgmlqq4VPPS1M3VzptSTSEeW2vzXzph11NR0FLLziEAYiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuECOy3DUyf6HlG8W38YrMr5QCJ0AzkI_TXAlux7NKcVn1nTMjEPbATy0pvu_h_OVDtecDzKjlXE7VJzh34jX22aMA4dhdHRuZXRziAAAAAwAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKesvAuDaXA2kCoDsMAAAwDwAAAAAyWNwAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA9Fbjb-zwMm2javDpBURIc8Pa1WEwjaM0OrC_Mp1Q1zIiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEA06Ux46VSurZP1C5lzDgICh8CtVBGGyLAKJP829aBzZ01gR76DnfgKDzHly1CKW2TAWj8Cd_xdF0brX0eKd6RKA4dhdHRuZXRziAYAAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhMlPU9qDaXA2kCoDsMAAAwDwAAAAAycvYAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA5-RhxSLi_ntGexX95UvoXi2DBDrFCCsx6t4sc5NznIFiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEAjO7w1zJqqj0zRNgF76lq-APLD3DuKRoedXAbFG1NwSErN-MSmuVWs_dNF_fUgq4V8iNVUwB9e1yfhKz_SJTSZA4dhdHRuZXRziAAAAAAGAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhKRc72CDaXA2kCoDsMAAAwDwAAAAAyV_oAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhAhL9oNjqeydl_3TK3t504OqFrYViavOxyRkSZqAk3abSiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA,enr:-QEAuEBt8vr4pcCT-PPh_gPM4YQ20qZ1QAUX1gwBHQ52ZIhKHyxE8kh45tNDSIR5MdAPEwmOye95p42hkkduAZHic967A4dhdHRuZXRziAAMAAAAAAAAg2NnYwSEZXRoMpCNMpLCgHFBZf__________gmlkgnY0gmlwhJ9ZFb-DaXA2kCoDsMAAAwDwAAAAAycvUAuDbmZkhAAAAACEcXVpY4IjKYVxdWljNoIjKYlzZWNwMjU2azGhA4nWJ3qnf6pZMlyHQnKaaMpZPWD62qK4VkKySMLf3AcRiHN5bmNuZXRzAIN0Y3CCIyiEdGNwNoIjKIN1ZHCCIyiEdWRwNoIjKA --suggested-fee-recipient=0xf97e180c050e5Ab072211Ad2C213Eb5AEE4DF134 --ignore-ws-check --enable-fast-confirmation --debug-level=debug\"",
+   "CreatedAt": "2026-10-22 08:17:53 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "7abfe3127ca9a9a88dbc52a04474365c51a1ba19562f440c20fc95ab8604e35b",
+   "Image": "registry-1.docker.io/ethpandaops/lighthouse@sha256:2104aed4cdec152fa4ee1abb407a11e7bc65ebe0da9eb290509182be96f36529",
+   "Labels": "buildnum=343,commit=81a7029,ethpandaops.io.commitRef=81a702910e64e640bff832c81bc78b781c5ea812,ethpandaops.io.repo=sigp/lighthouse,org.opencontainers.image.version=24.04,version=81a702910e64e640bff832c81bc78b781c5ea812",
+   "LocalVolumes": "0",
+   "Mounts": "/data/lighthouse,/data/execution-auth.secret,/data/ethereum-network-config/metadata",
+   "Names": "beacon",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "127.0.0.1:5052->5052/tcp, 127.0.0.1:5054->5054/tcp, 0.0.0.0:9000-9001->9000-9001/tcp, 0.0.0.0:9000-9001->9000-9001/udp",
+   "RunningFor": "5 days ago",
+   "Size": "12.3kB (virtual 283MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/xatu sentry --config=/config.yaml\"",
+   "CreatedAt": "2026-10-22 08:11:37 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "be621c3feae85dfacf4d00612d59607c840be3122d6cfb9bc063cad9301dafb9",
+   "Image": "registry-1.docker.io/ethpandaops/xatu:1.24.1",
+   "Labels": "org.opencontainers.image.created=2026-10-01T09:25:15Z,org.opencontainers.image.revision=3e95e6c4457abbe4b9fc44b69760162f9ac2743e,org.opencontainers.image.title=xatu,org.opencontainers.image.version=1.24.1",
+   "LocalVolumes": "0",
+   "Mounts": "/data/xatu-sentry/config.yaml",
+   "Names": "xatu-sentry",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "4.1kB (virtual 140MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/ethereum-metrics-exporter --metrics-port=9090 --config=/config/ethereum-metrics-exporter.yaml\"",
+   "CreatedAt": "2026-10-22 08:11:30 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "2eb182fd297bccb4e89deafd6875ef953485482ddf56147890dfbc1fc748aaa5",
+   "Image": "registry-1.docker.io/ethpandaops/ethereum-metrics-exporter:latest",
+   "Labels": "org.opencontainers.image.created=2026-10-06T03:15:03Z,org.opencontainers.image.revision=bafc01e9807c7a88ee6f0457bc5055607ad97f70,org.opencontainers.image.title=ethereum-metrics-exporter,org.opencontainers.image.version=0.30.0",
+   "LocalVolumes": "0",
+   "Mounts": "/data/ethereum-metrics-exporter,/data,/var/run/docker.sock",
+   "Names": "ethereum-metrics-exporter",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "5 days ago",
+   "Size": "24.6kB (virtual 35.5MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"./json_rpc_snoop -b=0.0.0.0 -p=8561 http://execution:8551\"",
+   "CreatedAt": "2026-10-22 08:11:06 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "38cd6249820967e9984f4544418e850ec2aec76c19a1c78ee5435e7c98cfaa12",
+   "Image": "registry-1.docker.io/ethpandaops/rpc-snooper:latest",
+   "Labels": "org.opencontainers.image.created=2026-07-17T07:23:31Z,org.opencontainers.image.revision=e3bb3cb2f91eeaa35a30f2edfb224751b68aaa54,org.opencontainers.image.title=rpc-snooper,org.opencontainers.image.version=0.0.21",
+   "LocalVolumes": "0",
+   "Mounts": "/data/execution-auth.secret",
+   "Names": "snooper-engine",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "3000/tcp, 127.0.0.1:8561->8561/tcp, 0.0.0.0:8961->8961/tcp",
+   "RunningFor": "5 days ago",
+   "Size": "4.1kB (virtual 128MB)",
+   "State": "running",
+   "Status": "Up 5 days"
+  },
+  {
+   "Command": "\"/app/docker-entrypoint.sh /usr/local/bin/docker-gen -watch -notify '/bin/sh /etc/nginx/certs/wildcard-symlinks.sh' -notify-sighup nginx-proxy /etc/docker-gen/templates/wildcard-symlinks.tmpl /etc/nginx/certs/wildcard-symlinks.sh\"",
+   "CreatedAt": "2026-10-20 18:09:29 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "df9c98d85c9abd44a213ab2bd22ebb5321e70ef40a7a5876f267c838e9eb1a89",
+   "Image": "registry-1.docker.io/nginxproxy/docker-gen",
+   "Labels": "org.opencontainers.image.authors=Nicolas Duchon <nicolas.duchon@gmail.com> (@buchdag), Jason Wilder,org.opencontainers.image.created=2026-10-19T03:17:33.031Z,org.opencontainers.image.description=Generate files from docker container meta-data,org.opencontainers.image.licenses=MIT,org.opencontainers.image.revision=1e4e4190d48c1b07311cb93b81f0b36074261b8e,org.opencontainers.image.source=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.title=docker-gen,org.opencontainers.image.url=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.version=0.17.2-88-g1e4e419",
+   "LocalVolumes": "1",
+   "Mounts": "/var/run/docker.sock,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/opt/nginx-proxy/templates/wildcard-symlinks.tmpl,html",
+   "Names": "nginx-proxy-cert-linker",
+   "Networks": "bridge",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "61.4kB (virtual 31.8MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/cert-loader.sh\"",
+   "CreatedAt": "2026-10-20 18:09:22 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "5c5f4dd67eec61f342b870fc4ab95adccce966ba7bc9fff9adf0a326c476c91e",
+   "Image": "registry-1.docker.io/ethpandaops/debian-docker:latest",
+   "Labels": "",
+   "LocalVolumes": "1",
+   "Mounts": "/opt/nginx-proxy/cert-loader.sh,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/var/run/docker.sock,html",
+   "Names": "nginx-proxy-cert-loader",
+   "Networks": "bridge",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "586kB (virtual 1.01GB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/app/docker-entrypoint.sh -notify-sighup nginx-proxy -watch /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf\"",
+   "CreatedAt": "2026-10-20 18:09:11 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "b7fa7e4d86a367c62fbf34470ac3812fc9367369717e856634a61e55c3441e8d",
+   "Image": "registry-1.docker.io/nginxproxy/docker-gen",
+   "Labels": "org.opencontainers.image.authors=Nicolas Duchon <nicolas.duchon@gmail.com> (@buchdag), Jason Wilder,org.opencontainers.image.created=2026-10-19T03:17:33.031Z,org.opencontainers.image.description=Generate files from docker container meta-data,org.opencontainers.image.licenses=MIT,org.opencontainers.image.revision=1e4e4190d48c1b07311cb93b81f0b36074261b8e,org.opencontainers.image.source=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.title=docker-gen,org.opencontainers.image.url=https://github.com/nginx-proxy/docker-gen,org.opencontainers.image.version=0.17.2-88-g1e4e419",
+   "LocalVolumes": "1",
+   "Mounts": "/var/run/docker.sock,/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,/opt/nginx-proxy/nginx.tmpl,html",
+   "Names": "nginx-proxy-gen",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "61.4kB (virtual 31.8MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/docker-entrypoint.sh nginx -g 'daemon off;'\"",
+   "CreatedAt": "2026-10-20 18:09:07 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "5b36a200143ac7040545f83a27cc0f98cc19890ff535c61bdd9fd1fd6d84d1fc",
+   "Image": "registry-1.docker.io/library/nginx:alpine",
+   "Labels": "maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+   "LocalVolumes": "1",
+   "Mounts": "/opt/nginx-proxy/certs,/opt/nginx-proxy/conf,/opt/nginx-proxy/htpasswd,/opt/nginx-proxy/vhost,html",
+   "Names": "nginx-proxy",
+   "Networks": "shared",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp",
+   "RunningFor": "7 days ago",
+   "Size": "4.21MB (virtual 77.6MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"./entrypoint.sh --datadir=/data --config=mainnet --Init.BaseDbPath=/data/mainnet --Init.ChainSpecPath=/config/genesis.json --KeyStore.KeyStoreDirectory=/data/keystore --KeyStore.EnodeKeyFile=/node-identity/node.key.plain --Init.DiscoveryEnabled=false --Network.MaxActivePeers=0 --Network.EnableEnrDiscovery=false --Discovery.UseDefaultDiscv5Bootnodes=false --Sync.FastSync=false --Sync.SnapSync=false --FlatDb.Enabled=true --FlatDb.Layout=Flat --Merge.TerminalTotalDifficulty=0 --Pruning.Mode=None --Init.MemoryHint=2500000000 --TxPool.Size=20000 --JsonRpc.Enabled=true --JsonRpc.Host=127.0.0.1 --JsonRpc.Port=18545 --JsonRpc.EnabledModules=Eth,Web3,Admin,Debug,Net --JsonRpc.EngineHost=127.0.0.1 --JsonRpc.EnginePort=18551 --JsonRpc.JwtSecretFile=/jwt\"",
+   "CreatedAt": "2026-10-20 17:54:23 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "bb7a3a1ce2613f03b4666e9f06b6098a541a533726f2c1a1d322c2b09f602629",
+   "Image": "registry-1.docker.io/ethpandaops/nethermind@sha256:60bb6209888af0b5e11622cff15a7a14c64f3849b0aeb50b46a1a77f64b75d17",
+   "Labels": "buildnum=163,commit=f4e2951,ethpandaops.io.commitRef=f4e295193e426230547c59dcdb8decb25d725418,ethpandaops.io.repo=NethermindEth/nethermind,org.opencontainers.image.created=1970-01-01T00:00:00Z,org.opencontainers.image.description=A robust execution client for Ethereum node operators.,org.opencontainers.image.documentation=https://docs.nethermind.io,org.opencontainers.image.licenses=LGPL-3.0-only,org.opencontainers.image.revision=f4e295193e426230547c59dcdb8decb25d725418,org.opencontainers.image.source=https://github.com/NethermindEth/nethermind,org.opencontainers.image.title=Nethermind,org.opencontainers.image.url=https://nethermind.io/nethermind-client,org.opencontainers.image.vendor=Demerzel Solutions Limited,org.opencontainers.image.version=f4e295193e426230547c59dcdb8decb25d725418-f4e2951,version=f4e295193e426230547c59dcdb8decb25d725418",
+   "LocalVolumes": "3",
+   "Mounts": "/data/pbt-1/qualification/config,/data/pbt-1/nethermind,/data/pbt-1/qualification/jwt,/data/pbt-1/node-identity,91337608945e5457b846922deef1f1b9066896251234c3787da72cae92a49687,f8aab192f4f8f5721e4adb8621c3174e7ae8aa2064c783e4fe9e7c35210860cc,a775e43fe9b160e108a494f4028967f0aa0f3c8667b8c8f995dc9b99426b09f8",
+   "Names": "pbt-1-worker-qualification",
+   "Networks": "none",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "36.9kB (virtual 476MB)",
+   "State": "exited",
+   "Status": "Exited (130) 7 days ago"
+  },
+  {
+   "Command": "\"/usr/local/bin/vector --config /etc/vector/vector.toml\"",
+   "CreatedAt": "2026-10-20 12:10:50 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "d9f785116d91700daa1c7ebc4d7475de72d6bcf042aefcaf8782449d5a021665",
+   "Image": "registry-1.docker.io/timberio/vector:0.56.0-alpine",
+   "Labels": "org.opencontainers.image.documentation=https://vector.dev/docs,org.opencontainers.image.source=https://github.com/vectordotdev/vector,org.opencontainers.image.url=https://vector.dev",
+   "LocalVolumes": "0",
+   "Mounts": "/data/vector/vector.toml,/var/run/docker.sock",
+   "Names": "vector",
+   "Networks": "bridge",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "16.4kB (virtual 160MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  },
+  {
+   "Command": "\"/bin/node_exporter --path.procfs=/host/proc --path.rootfs=/rootfs --path.sysfs=/host/sys --collector.filesystem.ignored-mount-points ^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)\"",
+   "CreatedAt": "2026-10-20 12:06:41 +0000 UTC",
+   "HealthStatus": "none",
+   "ID": "6678dec6243e616282247c49c077de61049333fa7b0ec4e39f91969e4ca3d61f",
+   "Image": "registry-1.docker.io/prom/node-exporter:v1.5.0",
+   "Labels": "maintainer=The Prometheus Authors <prometheus-developers@googlegroups.com>",
+   "LocalVolumes": "0",
+   "Mounts": "/,/proc,/sys",
+   "Names": "node_exporter",
+   "Networks": "host",
+   "Platform": {
+    "architecture": "amd64",
+    "os": "linux"
+   },
+   "Ports": "",
+   "RunningFor": "7 days ago",
+   "Size": "20.5kB (virtual 25MB)",
+   "State": "running",
+   "Status": "Up 7 days"
+  }
+ ],
+ "vmstat": [
+  "pgmajfault 2225284",
+  "oom_kill 0"
+ ],
+ "uptime": [
+  "2026-10-20 12:02:33"
+ ],
+ "cpu": [
+  "16"
+ ],
+ "mem": [
+  "MemTotal:       131911680 kB",
+  "SwapTotal:             0 kB"
+ ],
+ "df": [
+  "Mounted on Filesystem     Type     1B-blocks          Used        Avail",
+  "/          /dev/vda1      ext4 2536325763072 1956174307328 477032611840",
+  "/          /dev/vda1      ext4 2536325763072 1956174307328 477032611840"
+ ],
+ "lsblk": [
+  "NAME          SIZE ROTA TYPE MODEL",
+  "sda  1127428915200    1 disk Volume",
+  "vda  2576980377600    1 disk ",
+  "vdb         501760    1 disk "
+ ],
+ "kernel": [
+  "6.12.111+deb13-amd64"
+ ],
+ "stderr": ""
+}

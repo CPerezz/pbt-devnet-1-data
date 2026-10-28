@@ -1,0 +1,11 @@
+{
+ "source": "clickhouse-raw default.canonical_execution_* (mainnet)",
+ "blocks": [
+  24302001,
+  24304000
+ ],
+ "window": "pre_fork",
+ "rows": 2000,
+ "bytes": 57038,
+ "written": "2026-10-27T21:54:27+00:00"
+}

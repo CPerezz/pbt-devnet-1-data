@@ -1,0 +1,10 @@
+{
+ "source": "clickhouse-raw external.otel_logs",
+ "sql": "SELECT Timestamp AS ts, Body AS body FROM external.otel_logs WHERE Timestamp >= '2026-10-23 14:00:00' AND Timestamp < '2026-10-23 20:00:00' AND ResourceAttributes['network']='glamsterdam-pbt-1' AND ResourceAttributes['host.name']='lighthouse-besu-2' AND ResourceAttributes['container.name']='execution' AND NOT match(Body, 'Submitted transaction|Served eth_sendRawTransaction|eth_sendRawTransaction|eth_getTransactionCount|Looking for peers|Announced transaction|already known|nonce too high|Error response handling JsonRpc') ORDER BY Timestamp",
+ "t0": "2026-10-23 14:00:00",
+ "t1": "2026-10-23 20:00:00",
+ "host": "besu-2",
+ "rows": 8457,
+ "bytes": 290657,
+ "written": "2026-10-27T21:48:56+00:00"
+}

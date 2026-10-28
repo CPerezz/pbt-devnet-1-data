@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"nethermind_(pbt_.*|db_.*|bal_.*|block_access_list_.*|last_.*|blocks|mgas.*|gas_used|gas_limit|new_payload_execution_time|forkchoice_updated_execution_time|node_record_buffer_.*|.*snapshot.*|flat_.*|allocator_.*|arena_.*|blob_allocated_bytes|page_tracker_.*|carry_forward_.*|cached_nodes_count|loaded_from_.*|dirty_.*|memory_used_by_cache|persisted_.*|pruning_.*|processing_queue_size|account_writes|code_writes|storage_writes|main_thread_sstore_opcode|main_thread_sload_opcode|op_codes|creates|calls|trie_node_log_.*|importer_.*|commit_time|committed_nodes_count|reorganizations|bad_blocks|oldest_stored_.*|in_memory_slot_filter_memory)|dotnet_.*|jemalloc_bytes_.*|process_.*|ethereum_(blockchain_height|best_known_block_number|peer_count)\",network=\"glamsterdam-pbt-1\",job=\"execution\",instance=\"glamsterdam-pbt-1-lighthouse-nethermind-1\"}",
+ "t0": "2026-10-27 20:00:00",
+ "t1": "2026-10-27 21:00:00",
+ "step": "30s",
+ "rows": 26741,
+ "bytes": 28124,
+ "written": "2026-10-27T21:51:02+00:00"
+}

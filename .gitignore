@@ -1,0 +1,13 @@
+/.venv/
+__pycache__/
+*.tmp
+# pipeline run logs (data/raw/logs is data and is tracked)
+/logs/
+# The report (charts and HTML) is still being reworked; this repository publishes the data and the pipeline.
+/charts/
+/charts_*.py
+/diagrams.py
+/svgkit.py
+/logos.json
+/build_report.py
+/pbt-devnet-1-report.html
