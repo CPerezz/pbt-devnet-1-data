@@ -1,69 +1,69 @@
 {
  "window": [
   "2026-10-22T08:00:00+00:00",
-  "2026-10-27T21:00:00+00:00"
+  "2026-10-30T22:00:00+00:00"
  ],
- "files": 966,
- "rows": 119377646,
- "bytes": 553184968,
+ "files": 1451,
+ "rows": 180782212,
+ "bytes": 833760039,
  "logs_el_chunks": {
-  "geth-1": 23,
-  "geth-2": 23,
-  "geth-3": 23,
-  "nethermind-1": 23,
-  "nethermind-2": 23,
-  "besu-1": 23,
-  "besu-2": 23,
-  "erigon-1": 23,
-  "erigon-2": 23
+  "geth-1": 35,
+  "geth-2": 35,
+  "geth-3": 35,
+  "nethermind-1": 35,
+  "nethermind-2": 35,
+  "besu-1": 35,
+  "besu-2": 35,
+  "erigon-1": 35,
+  "erigon-2": 35
  },
- "logs_el_expected_chunks": 23,
+ "logs_el_expected_chunks": 35,
  "prom_step_coverage": {
-  "cadvisor/besu-1": 0.9935,
-  "cadvisor/besu-2": 0.9736,
-  "cadvisor/erigon-1": 0.9935,
-  "cadvisor/erigon-2": 0.9737,
-  "cadvisor/geth-1": 0.9935,
-  "cadvisor/geth-2": 0.9737,
-  "cadvisor/geth-3": 0.9737,
-  "cadvisor/nethermind-1": 0.9935,
-  "cadvisor/nethermind-2": 0.9737,
-  "consensus_node/besu-1": 0.994,
-  "consensus_node/besu-2": 0.994,
-  "consensus_node/erigon-1": 0.994,
-  "consensus_node/erigon-2": 0.9939,
-  "consensus_node/geth-1": 0.994,
-  "consensus_node/geth-2": 0.9941,
-  "consensus_node/geth-3": 0.994,
-  "consensus_node/nethermind-1": 0.994,
-  "consensus_node/nethermind-2": 0.994,
-  "execution/besu-1": 0.9447,
-  "execution/besu-2": 0.9824,
-  "execution/erigon-1": 0.99,
-  "execution/erigon-2": 0.8356,
-  "execution/geth-1": 0.994,
-  "execution/geth-2": 0.994,
-  "execution/geth-3": 0.9939,
-  "execution/nethermind-1": 0.9935,
-  "execution/nethermind-2": 0.994,
-  "exporter/besu-1": 0.994,
-  "exporter/besu-2": 0.994,
-  "exporter/erigon-1": 0.9939,
-  "exporter/erigon-2": 0.994,
-  "exporter/geth-1": 0.994,
-  "exporter/geth-2": 0.994,
-  "exporter/geth-3": 0.9939,
-  "exporter/nethermind-1": 0.994,
-  "exporter/nethermind-2": 0.994,
-  "node/besu-1": 1.0001,
-  "node/besu-2": 0.9999,
-  "node/erigon-1": 1.0001,
-  "node/erigon-2": 1.0,
-  "node/geth-1": 1.0001,
-  "node/geth-2": 1.0001,
-  "node/geth-3": 1.0,
-  "node/nethermind-1": 1.0001,
-  "node/nethermind-2": 1.0001
+  "cadvisor/besu-1": 0.9583,
+  "cadvisor/besu-2": 0.9454,
+  "cadvisor/erigon-1": 0.9583,
+  "cadvisor/erigon-2": 0.9454,
+  "cadvisor/geth-1": 0.9584,
+  "cadvisor/geth-2": 0.9456,
+  "cadvisor/geth-3": 0.9454,
+  "cadvisor/nethermind-1": 0.9582,
+  "cadvisor/nethermind-2": 0.9454,
+  "consensus_node/besu-1": 0.9585,
+  "consensus_node/besu-2": 0.9585,
+  "consensus_node/erigon-1": 0.9585,
+  "consensus_node/erigon-2": 0.9585,
+  "consensus_node/geth-1": 0.9585,
+  "consensus_node/geth-2": 0.9586,
+  "consensus_node/geth-3": 0.9585,
+  "consensus_node/nethermind-1": 0.9585,
+  "consensus_node/nethermind-2": 0.9586,
+  "execution/besu-1": 0.9266,
+  "execution/besu-2": 0.951,
+  "execution/erigon-1": 0.9545,
+  "execution/erigon-2": 0.8555,
+  "execution/geth-1": 0.9427,
+  "execution/geth-2": 0.8413,
+  "execution/geth-3": 0.9425,
+  "execution/nethermind-1": 0.9582,
+  "execution/nethermind-2": 0.9586,
+  "exporter/besu-1": 0.9885,
+  "exporter/besu-2": 0.9884,
+  "exporter/erigon-1": 0.9883,
+  "exporter/erigon-2": 0.9884,
+  "exporter/geth-1": 0.9884,
+  "exporter/geth-2": 0.9884,
+  "exporter/geth-3": 0.9883,
+  "exporter/nethermind-1": 0.9884,
+  "exporter/nethermind-2": 0.9885,
+  "node/besu-1": 0.9924,
+  "node/besu-2": 0.9923,
+  "node/erigon-1": 0.9924,
+  "node/erigon-2": 0.9923,
+  "node/geth-1": 0.9923,
+  "node/geth-2": 0.9924,
+  "node/geth-3": 0.9923,
+  "node/nethermind-1": 0.9924,
+  "node/nethermind-2": 0.9924
  },
  "prom_gaps_over_5min": [
   [
@@ -95,6 +95,11 @@
    "erigon-1",
    "2026-10-25 07:00:00+01:00",
    420
+  ],
+  [
+   "erigon-1",
+   "2026-10-29 15:24:30+01:00",
+   1110
   ],
   [
    "erigon-2",
@@ -140,17 +145,87 @@
    "erigon-2",
    "2026-10-25 06:02:30+01:00",
    930
+  ],
+  [
+   "erigon-2",
+   "2026-10-29 16:28:30+01:00",
+   570
+  ],
+  [
+   "geth-1",
+   "2026-10-29 10:07:30+01:00",
+   11670
+  ],
+  [
+   "geth-1",
+   "2026-10-30 15:15:30+01:00",
+   1200
+  ],
+  [
+   "geth-2",
+   "2026-10-29 11:17:00+01:00",
+   750
+  ],
+  [
+   "geth-2",
+   "2026-10-29 11:29:30+01:00",
+   810
+  ],
+  [
+   "geth-2",
+   "2026-10-29 11:43:00+01:00",
+   810
+  ],
+  [
+   "geth-2",
+   "2026-10-29 11:56:30+01:00",
+   810
+  ],
+  [
+   "geth-2",
+   "2026-10-29 12:10:00+01:00",
+   750
+  ],
+  [
+   "geth-2",
+   "2026-10-29 12:22:30+01:00",
+   750
+  ],
+  [
+   "geth-2",
+   "2026-10-29 12:35:00+01:00",
+   810
+  ],
+  [
+   "geth-2",
+   "2026-10-29 12:53:00+01:00",
+   80910
+  ],
+  [
+   "geth-2",
+   "2026-10-30 11:21:30+01:00",
+   600
+  ],
+  [
+   "geth-2",
+   "2026-10-30 15:15:30+01:00",
+   1440
+  ],
+  [
+   "geth-3",
+   "2026-10-29 10:06:30+01:00",
+   11730
   ]
  ],
  "xatu_rows": {
-  "beacon_api_eth_v1_events_block": 320578,
-  "beacon_api_eth_v1_events_chain_reorg": 387,
-  "beacon_api_eth_v1_events_execution_payload": 320172,
-  "beacon_api_eth_v1_events_execution_payload_available": 320172,
-  "beacon_api_eth_v1_events_finalized_checkpoint": 10728,
-  "beacon_api_eth_v1_events_head": 319579,
-  "beacon_api_eth_v2_beacon_block": 36517,
-  "beacon_api_slot": 347075,
-  "execution_engine_new_payload": 329417
+  "beacon_api_eth_v1_events_block": 475439,
+  "beacon_api_eth_v1_events_chain_reorg": 620,
+  "beacon_api_eth_v1_events_execution_payload": 474976,
+  "beacon_api_eth_v1_events_execution_payload_available": 474975,
+  "beacon_api_eth_v1_events_finalized_checkpoint": 15818,
+  "beacon_api_eth_v1_events_head": 473783,
+  "beacon_api_eth_v2_beacon_block": 54897,
+  "beacon_api_slot": 513158,
+  "execution_engine_new_payload": 495511
  }
 }

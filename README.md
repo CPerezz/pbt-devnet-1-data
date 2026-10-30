@@ -5,10 +5,11 @@ nine execution clients (geth, Nethermind, Besu and erigon) moved their state fro
 binary tree (PBT) of [EIP-8347](https://eips.ethereum.org/EIPS/eip-8347) / EIP-8297 while the chain kept running. It
 also holds the derived tables and SQL views built from that data, and the scripts that pulled it.
 
-**Data window (this release): 2026-10-22 08:00 → 2026-10-27 21:00 UTC.** The PBT fork happens at
-2026-10-29 09:00 UTC. A later release extends the same files through 2026-10-31 09:00 (fork + 48 h).
+**Data window: 2026-10-22 08:00 → 2026-10-30 22:00 UTC**, the whole life of the devnet. The PBT fork
+(`binaryTrieTime`) is at 2026-10-29 09:00 UTC; the chain's last block is 24,558,379 at 2026-10-30 14:11:48 UTC
+(fork + 29 h), when the devnet was shut down. Container logs run to 14:41 and Prometheus to 20:25 that day.
 
-Everything is [Parquet](https://parquet.apache.org/) (zstd) or JSON, about 0.6 GB in total.
+Everything is [Parquet](https://parquet.apache.org/) (zstd) or JSON, 0.78 GiB in total (1,451 files, 181 M rows).
 
 ## Quick start
 
@@ -66,7 +67,7 @@ timestamp in this repository is UTC.
     ├── MANIFEST.json         one entry per raw file: source, exact query, window, rows, bytes, write time
     ├── validation.json       window, totals, log-chunk count, Prometheus coverage per series, gaps > 5 min
     ├── pbt-devnet-1.duckdb   views only (no data inside): every dataset + every queries/*.sql
-    ├── raw/                  as pulled, 966 Parquet files + a .meta.json next to each
+    ├── raw/                  as pulled, 1,451 Parquet files + a .meta.json next to each
     │   ├── logs/             container logs (otel → ClickHouse)
     │   ├── xatu/             beacon/engine events (ethPandaOps xatu)
     │   ├── prom/             Prometheus series, 30 s
@@ -108,9 +109,9 @@ timestamp in this repository is UTC.
 
 | Path | Grain | Columns | Contents |
 |---|---|---|---|
-| `logs/el/<host>/<YYYYmmddHH>.parquet` | one row per log line, 6 h files | `ts`, `body` | Every line of the `execution` container except transaction-submission spam and peer chatter (the `EL_NOISE` regex in `common.py`). 10.8 M lines. Migration progress, per-block lines, errors, restarts and build versions are all here. |
-| `logs/cl/<host>/<YYYYmmdd08>.parquet` | log line, 24 h | `ts`, `container` (`beacon`/`validator`), `body` | Lighthouse lines at CRIT/ERRO/WARN, plus any line about the execution engine (offline, syncing…). 573 k lines. |
-| `logs/adhoc/<host>/<YYYYmmdd08>.parquet` | log line, 24 h | `ts`, `container`, `image`, `body` | Every line from operator containers that are not part of the node: datadir restores, image builds, erigon's offline PBT tooling, `execution-init`. 41 k lines. |
+| `logs/el/<host>/<YYYYmmddHH>.parquet` | one row per log line, 6 h files | `ts`, `body` | Every line of the `execution` container except transaction-submission spam and peer chatter (the `EL_NOISE` regex in `common.py`). 16.9 M lines. Migration progress, per-block lines, errors, restarts and build versions are all here, the fork day included. |
+| `logs/cl/<host>/<YYYYmmdd08>.parquet` | log line, 24 h | `ts`, `container` (`beacon`/`validator`), `body` | Lighthouse lines at CRIT/ERRO/WARN, plus any line about the execution engine (offline, syncing…). 950 k lines. |
+| `logs/adhoc/<host>/<YYYYmmdd08>.parquet` | log line, 24 h | `ts`, `container`, `image`, `body` | Every line from operator containers that are not part of the node: datadir restores, image builds, erigon's offline PBT tooling, `execution-init`, the post-fork geth rebuilds. 45 k lines. |
 | `logs/el_noise_hourly.parquet` | host × hour | `host`, `hour`, `lines` | How many EL lines the spam filter dropped: a proxy for the transaction load. |
 
 ### `xatu/`: ethPandaOps xatu, database `glamsterdam-pbt-1`
@@ -120,20 +121,20 @@ them when querying. Every table has `meta_client_name` (the sentry next to each 
 
 | Table | Rows | What it is |
 |---|---|---|
-| `execution_engine_new_payload` | 329 k | Every `engine_newPayload` call each node's EL answered: `duration_ms`, `status` (VALID / SYNCING / ACCEPTED / INVALID), `block_number`, `gas_used`, `tx_count`, `validation_error`, client version. The per-block processing record of every node. |
-| `beacon_api_eth_v1_events_block` | 321 k | Block gossip events seen by each sentry: `slot`, `block`, `propagation_slot_start_diff` (ms after slot start). |
-| `beacon_api_eth_v1_events_head` | 320 k | Head events per sentry. |
+| `execution_engine_new_payload` | 496 k | Every `engine_newPayload` call each node's EL answered: `duration_ms`, `status` (VALID / SYNCING / ACCEPTED / INVALID), `block_number`, `gas_used`, `tx_count`, `validation_error`, client version. The per-block processing record of every node. |
+| `beacon_api_eth_v1_events_block` | 475 k | Block gossip events seen by each sentry: `slot`, `block`, `propagation_slot_start_diff` (ms after slot start). |
+| `beacon_api_eth_v1_events_head` | 474 k | Head events per sentry. |
 | `beacon_api_eth_v1_events_execution_payload` | 320 k | ePBS execution-payload events (`block_hash`, `builder_index`). |
 | `beacon_api_eth_v1_events_execution_payload_available` | 320 k | Payload-availability events. |
-| `beacon_api_eth_v1_events_finalized_checkpoint` | 10.7 k | Finalized checkpoints (`epoch`, `block`, `state`). |
-| `beacon_api_eth_v1_events_chain_reorg` | 387 | Reorgs (`depth`, `old_head_block`, `new_head_block`). |
-| `beacon_api_eth_v2_beacon_block` | 36.5 k | Beacon blocks with proposer, builder and payload summary (gas, txs, bytes). |
-| `beacon_api_slot` | 347 k | Per-slot aggregates per sentry (`blocks`, `attestations`), merged with `sumMerge`. |
+| `beacon_api_eth_v1_events_finalized_checkpoint` | 15.8 k | Finalized checkpoints (`epoch`, `block`, `state`). |
+| `beacon_api_eth_v1_events_chain_reorg` | 620 | Reorgs (`depth`, `old_head_block`, `new_head_block`). |
+| `beacon_api_eth_v2_beacon_block` | 54.9 k | Beacon blocks with proposer, builder and payload summary (gas, txs, bytes). |
+| `beacon_api_slot` | 513 k | Per-slot aggregates per sentry (`blocks`, `attestations`), merged with `sumMerge`. |
 
 ### `prom/`: Prometheus (ethPandaOps `devnets`), 30 s step
 
 Path `prom/<job>/<host>/<YYYYmmddHH>.parquet`, long format: `ts` (epoch s), `metric`, `labels` (JSON of the
-remaining labels), `value`. 105.8 M points. Per job, only the metric families in `pull_prom.py:KEEP` were pulled:
+remaining labels), `value`. 159.6 M points. Per job, only the metric families in `pull_prom.py:KEEP` were pulled:
 
 | Job | Metrics | Contents |
 |---|---|---|
@@ -144,6 +145,9 @@ remaining labels), `value`. 105.8 M points. Per job, only the metric families in
 | `consensus_node` | 31 | Lighthouse: head/finalized/justified epochs, block delays, execution-layer state, peers. |
 
 ### `rpc/`: from the devnet's own RPC (`panda ethnode`)
+
+Pulled on 2026-10-27 (head 24,540,537) and not extended: the devnet's RPC endpoints were gone by the time of the final
+pull. Post-fork per-block figures (gas, transactions, processing time) are in `xatu/`.
 
 | File | Contents |
 |---|---|
@@ -167,7 +171,7 @@ One row per block:
 ### `watch/`: our monitor
 
 The watch was a read-only monitor that polled every node over SSH and RPC about once a minute. It is the **only source
-of geth's and Nethermind's BAL-replay cursors**. It slept about 29 h in 8 gaps (a laptop).
+of geth's and Nethermind's BAL-replay cursors**. It slept about 39 h in 16 gaps (a laptop) and ran until the end.
 
 `watch_samples.parquet` has one row per poll × host:
 
@@ -196,7 +200,8 @@ roots, digests, counts.
 
 ### `hosts/`: configuration snapshot
 
-`hosts/<host>.json` was taken on 2026-10-27. Keys:
+`hosts/<host>.json` was taken on 2026-10-27, before the fork (the hosts were unreachable at the final pull). The
+images and flags the geths ran after the fork are in their logs (`lifecycle.parquet`, view `p1_builds`). Keys:
 - `inspect`: `docker inspect` of `execution`, `beacon` and `validator`: image, args, mounts, memory limit, env with
   secrets removed;
 - `ps`: all containers;
@@ -235,7 +240,7 @@ Each file is one view; its first comment line says what it answers.
 | Load, mainnet and the projection | `j1_workload`, `j2_projection` |
 | Failures and builds | `k1_failures`, `k2_recovery`, `p1_builds` |
 | Comparison rows | `r1_compare` |
-| Fork activation (empty until the fork is in the data) | `n1_fork` |
+| Fork activation | `n1_fork` |
 
 `c0_states` labels what each node was doing over time: `MPT only`, `migrating`, `failed attempt`, `replay`, `synced`;
 for erigon, `dual attempt`, `shadow stopped`, `dual (hex+bin)`. Each state after the XEN load start carries a
@@ -252,6 +257,12 @@ for erigon, `dual attempt`, `shadow stopped`, `dual (hex+bin)`. Each state after
 - Order: `pull_*` → `manifest.py` → `derive_logs.py` → `derive_ledger.py` → `derive_metrics.py` → `catalog.py`.
 
 ## Caveats
+
+- **The fork day is in the data.** The two 16 GiB geths (geth-1, geth-3) were OOM-killed within four minutes of the fork
+  and crash-looped until a patched image at 12:21; geth-2 (32 GiB) died at 10:12 and came back on 10-30 10:31 through a
+  rebuilt start-up path. `failures.parquet` (`crash_restart`, `oom_kill`, `replay_stall`), `lifecycle.parquet` and the EL
+  logs carry the whole sequence; `n1_fork` compares every node's block processing across the fork (VALID answers only,
+  since a node catching up after a crash answers SYNCING in microseconds).
 
 - **BALs are sampled.** A synthetic-window BAL is ~1.9 MB, so fetching every block would have meant ~130 GB of transfer.
 - **Container metrics start late.** cadvisor starts at 08:52 or 11:30 on 10-22; host metrics (`node`) cover the whole

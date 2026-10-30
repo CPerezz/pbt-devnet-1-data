@@ -2,9 +2,9 @@
  "source": "prometheus devnets",
  "query": "{__name__=~\"eth_docker_.*|eth_exe_.*|eth_con_(sync_.*|beacon_finality_checkpoint_epochs|beacon_slot|peers|health_up)\",network=\"glamsterdam-pbt-1\",job=\"exporter\",instance=\"glamsterdam-pbt-1-lighthouse-geth-3\"}",
  "t0": "2026-10-27 20:00:00",
- "t1": "2026-10-27 21:00:00",
+ "t1": "2026-10-28 08:00:00",
  "step": "30s",
- "rows": 15125,
- "bytes": 32321,
- "written": "2026-10-27T21:51:59+00:00"
+ "rows": 180125,
+ "bytes": 471058,
+ "written": "2026-10-30T22:39:05+00:00"
 }

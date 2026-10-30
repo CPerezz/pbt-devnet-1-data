@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"jvm_.*|process_.*|besu_(bal|block|blockchain|bonsai|synchronizer)_.*|ethereum_.*|besu_peers_peer_count\",network=\"glamsterdam-pbt-1\",job=\"execution\",instance=\"glamsterdam-pbt-1-lighthouse-besu-1\"}",
+ "t0": "2026-10-28 08:00:00",
+ "t1": "2026-10-28 20:00:00",
+ "step": "30s",
+ "rows": 224796,
+ "bytes": 543467,
+ "written": "2026-10-30T22:38:40+00:00"
+}

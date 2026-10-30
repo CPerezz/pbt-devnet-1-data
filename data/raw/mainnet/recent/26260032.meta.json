@@ -1,0 +1,11 @@
+{
+ "source": "clickhouse-raw default.canonical_execution_* (mainnet)",
+ "blocks": [
+  26260032,
+  26262031
+ ],
+ "window": "recent",
+ "rows": 2000,
+ "bytes": 54192,
+ "written": "2026-10-30T22:39:21+00:00"
+}

@@ -11,3 +11,5 @@ __pycache__/
 /logos.json
 /build_report.py
 /pbt-devnet-1-report.html
+# raw evidence from the fork-day OOM investigation (profiles, live memory samples); not part of the dataset
+/data/raw/prom_hosts/

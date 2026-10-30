@@ -1,0 +1,10 @@
+{
+ "source": "prometheus devnets",
+ "query": "{__name__=~\"container_.*\",network=\"glamsterdam-pbt-1\",job=\"cadvisor\",instance=\"glamsterdam-pbt-1-lighthouse-erigon-2\",name=~\"execution|beacon\"}",
+ "t0": "2026-10-28 08:00:00",
+ "t1": "2026-10-28 20:00:00",
+ "step": "30s",
+ "rows": 38737,
+ "bytes": 165300,
+ "written": "2026-10-30T22:39:00+00:00"
+}

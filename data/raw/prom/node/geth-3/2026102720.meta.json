@@ -2,9 +2,9 @@
  "source": "prometheus devnets",
  "query": "{__name__=~\"node_pressure_.*|node_disk_.*|node_filesystem_(avail|size|free)_bytes|node_memory_(MemTotal|MemAvailable|MemFree|Cached|Buffers|Dirty|Writeback|AnonPages|Active_anon|Inactive_anon|Active_file|Inactive_file|Shmem|Slab|SReclaimable|SUnreclaim|PageTables|Committed_AS|Mapped)_bytes|node_vmstat_.*|node_load(1|5|15)|node_network_(receive|transmit)_bytes_total|node_procs_(running|blocked)|node_context_switches_total\",network=\"glamsterdam-pbt-1\",job=\"node\",instance=\"glamsterdam-pbt-1-lighthouse-geth-3\"}",
  "t0": "2026-10-27 20:00:00",
- "t1": "2026-10-27 21:00:00",
+ "t1": "2026-10-28 08:00:00",
  "step": "30s",
- "rows": 21054,
- "bytes": 62131,
- "written": "2026-10-27T21:52:33+00:00"
+ "rows": 250734,
+ "bytes": 952911,
+ "written": "2026-10-30T22:39:32+00:00"
 }

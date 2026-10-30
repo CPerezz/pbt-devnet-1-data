@@ -1,0 +1,10 @@
+{
+ "source": "clickhouse-raw external.otel_logs",
+ "sql": "SELECT Timestamp AS ts, ResourceAttributes['container.name'] AS container, ResourceAttributes['container.image.name'] AS image, Body AS body FROM external.otel_logs WHERE Timestamp >= '2026-10-30 08:00:00' AND Timestamp < '2026-10-30 22:00:00' AND ResourceAttributes['network']='glamsterdam-pbt-1' AND ResourceAttributes['host.name']='lighthouse-erigon-2' AND ResourceAttributes['container.name'] NOT IN ('execution', 'beacon', 'validator', 'xatu-sentry', 'cadvisor', 'dns_server', 'cert_issuer', 'eth-inventory-web', 'nginx-proxy', 'nginx-proxy-gen', 'nginx-proxy-cert-linker', 'nginx-proxy-cert-loader', 'vector', 'node_exporter', 'prometheus', 'snooper-engine', 'ethereum-metrics-exporter', 'cadvisor-test') ORDER BY Timestamp",
+ "t0": "2026-10-30 08:00:00",
+ "t1": "2026-10-30 22:00:00",
+ "host": "erigon-2",
+ "rows": 0,
+ "bytes": 818,
+ "written": "2026-10-30T22:40:49+00:00"
+}
